@@ -79,6 +79,110 @@ svg {
     color: #839788; 
 }
 
+.bg-lightgreen {
+    background-color: #839788; 
+}
+
+.header-box { 
+    margin-top: -10%; 
+    margin-left: 75%;
+  }
+
+  .bouncing-animation{
+    animation: bounce 1s ease-in-out infinite alternate;
+    left: 70%;
+    bottom: 1.65rem;
+  }
+
+  @keyframes bounce {
+    from {translate: 0 0;}
+    to { translate: 0 -4rem;}
+  }
+
+  .mid-title {
+    font-family: 'Lora', 'serif';
+    text-transform: uppercase;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+.text-border {
+    border-left-width: 2px;
+    border-color: #839788;
+    margin-left: 5%;
+}
+
+
+
+
+
+/*Sliding text*/
+/* Container for centering the text-wrapper */
+.center-wrapper {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Full width */
+  }
+  
+  /* Grid container for centering and layout */
+  .text-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: first column auto width, second column flexible */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 100%; /* Full width */
+    height: 40px; /* Height of the container */
+    margin-top: 50px; /* Space above the container */
+  }
+  
+  /* Static text styling */
+  .static-text {
+    font-size: 20px; /* Adjust font size */
+    color: #EEE0CB; /* Change color to match your design */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  /* Container for the animated text */
+  .animated-text-wrapper {
+    position: relative; /* Position relative for absolute positioning of child */
+    height: 100%; /* Fill the height of the container */
+    overflow: hidden; /* Hide overflow to ensure smooth scrolling */
+  }
+  
+  /* Animated text */
+  .animated-text {
+    display: flex; /* Stack items vertically */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position absolutely to control visibility */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    height: 100%; /* Fill the height of the container */
+    width: 100%; /* Fill the width of the container */
+    animation: slide 8s linear infinite; /* Apply animation */
+  }
+  
+  /* Individual animated text items */
+  .animated-text span {
+    display: block;
+    font-size: 20px; /* Adjust font size */
+    padding: 8px 5px; /* Space around text */
+    color:#EEE0CB; /* Change color to match your design */
+    height: 40px; /* Ensure height matches container */
+    line-height: 40px; /* Center text vertically */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  /* Animation for sliding text */
+  @keyframes slide {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-160px); } /* Adjust based on the number of words and their height */
+  }
+  
+  
+  
+
+
+
 
 .line-top {
     border-width: 2px;
