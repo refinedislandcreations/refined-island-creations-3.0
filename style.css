@@ -112,6 +112,11 @@ svg {
     margin-left: 5%;
 }
 
+.text-border-top {
+    border-top-width: 2px;
+    border-color: #839788;
+}
+
 
 
 
@@ -167,13 +172,14 @@ svg {
   /* Individual animated text items */
   .animated-text span {
     display: block;
-    font-size: 2.25rem; /* 36px */
+    font-size: 3.55rem; /* 36px */
     line-height: 2.5rem; /* 40px */
-    padding: 8px 5px; /* Space around text */
+    padding: 33px 20px; /* Space around text */
     color:#EEE0CB; /* Change color to match your design */
     height: 40px; /* Ensure height matches container */
     line-height: 40px; /* Center text vertically */
     white-space: nowrap; /* Prevent text wrapping */
+    font-style: italic;
   }
   
   /* Animation for sliding text */
@@ -273,16 +279,22 @@ svg {
 
 .mobile-menu {
     display: none;
-    background-color: #697d6f;
-    color: #001410;
-    padding: 6rem;
+    background-color: #001410;
+    border-left-width: 2px;
+    border-color: #839788;
+    color:#EEE0CB; 
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     position: fixed;
     top: 0;
     right: 0;
-    text-align: center;
+    text-align: left;
     overflow-y: auto;
     z-index: 50;
 }
+
 
 .mobile-menu.active {
     display: block;

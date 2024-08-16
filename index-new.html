@@ -53,7 +53,7 @@ slider:
 
 
 <!--------For who--------->
-<section class="text-wrapper">
+<section class="text-wrapper mb-10p">
   <div class="static-text">We create websites for</div>
   <div class="animated-text-wrapper ">
     <div class="animated-text">
@@ -68,13 +68,15 @@ slider:
 
 <!---------Packages------------->
 
-<section class="max-w-screen-2xl mx-auto p-5p">
+<section class="max-w-screen-2xl mx-auto p-10p">
   <div class="grid grid-cols-6">
     <div class="col-span-2">
       <p class="mid-title">Our Packages</p>
     </div>
-    <div class="col-span-4 text-border">
-      <p class="ml-5p">We understand that every business is unique, with distinct needs and requirements depending on its stage of growth. That’s why we offer three distinct website options, each designed to deliver exceptional quality while addressing different levels of business development.</p>
+    <div class="col-span-4">    </div>
+    <div class="col-span-2">    </div>
+    <div class="col-span-4 text-border-top">
+      <p class="mt-5p">We understand that every business is unique, with distinct needs and requirements depending on its stage of growth. That’s why we offer three distinct website options, each designed to deliver exceptional quality while addressing different levels of business development.</p>
     </div>
   </div>
 </section>
@@ -82,7 +84,7 @@ slider:
 <section class="max-w-screen-2xl mx-auto p-5p">
   <div class="grid grid-cols-6">
     <div class="col-span-3 relative h-full min-h-50">
-      <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="/images/temporary-img.jpg" alt="">
+      <img class="absolute inset-0 w-full h-full object-cover" src="/images/temporary-img.jpg" alt="">
     </div>
     <div class="col-span-3 flex items-center justify-center" style="margin-left: -50%;">
       <div class="bg-lightgreen p-5p z-10">
@@ -98,7 +100,7 @@ slider:
 <section class="max-w-screen-2xl mx-auto p-5p">
   <div class="grid grid-cols-6">
     <div class="col-span-3 relative h-full min-h-50">
-      <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="/images/temporary-img.jpg" alt="">
+      <img class="absolute inset-0 w-full h-full object-cover" src="/images/temporary-img.jpg" alt="">
     </div>
     <div class="col-span-3 flex items-center justify-center" style="margin-left: -50%;">
       <div class="bg-lightgreen p-5p z-10">
@@ -114,7 +116,7 @@ slider:
 <section class="max-w-screen-2xl mx-auto p-5p">
   <div class="grid grid-cols-6">
     <div class="col-span-3 relative h-full min-h-50">
-      <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" src="/images/temporary-img.jpg" alt="">
+      <img class="absolute inset-0 w-full h-full object-cover" src="/images/temporary-img.jpg" alt="">
     </div>
     <div class="col-span-3 flex items-center justify-center" style="margin-left: -50%;">
       <div class="bg-lightgreen p-5p z-10">
@@ -129,20 +131,47 @@ slider:
 
 <!---------Portfolio------------->
 
-<section class="max-w-screen-2xl mx-auto ml-5p">
-  <p class="mid-title text-center">Featured Projects</p>
+<section class="max-w-screen-2xl mx-auto p-10p">
+  <div class="grid grid-cols-6">
+    <div class="col-span-2">
+      <p class="mid-title">Featured Projects</p>
+    </div>
+    <div class="col-span-4">    </div>
+    <div class="col-span-2">    </div>
+    <div class="col-span-4 text-border-top">
+      <p class="mt-5p">Lorem Ipsum</p>
+    </div>
+  </div>
+</section>
 
+<section class="max-w-screen-2xl mx-auto ml-5p">
   <div class="overflow-x-auto whitespace-nowrap py-4">
       <div class="flex items-start">
           {% for item in page.slider %}
               <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group">
-                  <img class="w-full h-80 object-cover rounded-lg" src="{{ item.image }}" alt="{{ item.title }}" />
-                  <div class="absolute inset-x-0 bottom-0 bg-white bg-opacity-75 p-3 flex items-center justify-between rounded-b-lg">
+                  <img class="w-full h-80 object-cover" src="{{ item.image }}" alt="{{ item.title }}" />
+                  <div class="absolute inset-x-0 bottom-0 bg-white bg-opacity-75 p-3 flex items-center justify-between">
                       <span class="text-lg font-semibold">{{ item.title }}</span>
                       <i class="fas fa-link text-blue-500"></i>
                   </div>
               </a>
           {% endfor %}
       </div>
+  </div>
+</section>
+
+
+
+
+<!---------Reasons to have a website ------------->
+
+<section class="max-w-screen-2xl mx-auto p-10p">
+  <div class="grid grid-cols-6">
+    <div class="col-span-2">
+      <p class="mid-title">Where Every Pixel Tells Your Business's Story.</p>
+    </div>
+    <div class="col-span-4 text-border">
+      <p class="ml-5p">We craft custom-coded websites tailored to showcase the distinctiveness of your hospitality business in Bali. Our sites are lightning-fast, fully responsive, easy to update, and optimized for outstanding SEO performance.</p>
+    </div>
   </div>
 </section>
