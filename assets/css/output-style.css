@@ -500,6 +500,10 @@ a {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -507,14 +511,6 @@ a {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -579,11 +575,11 @@ a {
 .h-8 {
   height: 2rem;
 }
-.h-full {
-  height: 100%;
-}
 .h-80 {
   height: 20rem;
+}
+.h-full {
+  height: 100%;
 }
 .max-h-96 {
   max-height: 24rem;
@@ -609,11 +605,11 @@ a {
 .w-8 {
   width: 2rem;
 }
-.w-full {
-  width: 100%;
-}
 .w-80 {
   width: 20rem;
+}
+.w-full {
+  width: 100%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -670,16 +666,8 @@ a {
 .gap-5 {
   gap: 1.25rem;
 }
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .overflow-hidden {
   overflow: hidden;
-}
-.overflow-scroll {
-  overflow: scroll;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -761,14 +749,17 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-10p {
+  padding: 10%;
+}
+.p-3 {
+  padding: 0.75rem;
+}
 .p-5 {
   padding: 1.25rem;
 }
 .p-5p {
   padding: 5%;
-}
-.p-3 {
-  padding: 0.75rem;
 }
 .px-0 {
   padding-left: 0px;
@@ -794,6 +785,10 @@ a {
   padding-top: 3%;
   padding-bottom: 3%;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -801,14 +796,6 @@ a {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .pb-10p {
   padding-bottom: 10%;
@@ -1060,12 +1047,14 @@ svg {
     width: 100%; /* Full width */
     height: 40px; /* Height of the container */
     margin-top: 50px; /* Space above the container */
+    margin-left: 20%;
   }
   
   /* Static text styling */
   .static-text {
-    font-size: 20px; /* Adjust font size */
-    color: #EEE0CB; /* Change color to match your design */
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+    color: #839788; 
     white-space: nowrap; /* Prevent text wrapping */
   }
   
@@ -1086,12 +1075,14 @@ svg {
     height: 100%; /* Fill the height of the container */
     width: 100%; /* Fill the width of the container */
     animation: slide 8s linear infinite; /* Apply animation */
+    font-family: 'Lora', 'serif';
   }
   
   /* Individual animated text items */
   .animated-text span {
     display: block;
-    font-size: 20px; /* Adjust font size */
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
     padding: 8px 5px; /* Space around text */
     color:#EEE0CB; /* Change color to match your design */
     height: 40px; /* Ensure height matches container */

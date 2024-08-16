@@ -133,12 +133,14 @@ svg {
     width: 100%; /* Full width */
     height: 40px; /* Height of the container */
     margin-top: 50px; /* Space above the container */
+    margin-left: 20%;
   }
   
   /* Static text styling */
   .static-text {
-    font-size: 20px; /* Adjust font size */
-    color: #EEE0CB; /* Change color to match your design */
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+    color: #839788; 
     white-space: nowrap; /* Prevent text wrapping */
   }
   
@@ -159,12 +161,14 @@ svg {
     height: 100%; /* Fill the height of the container */
     width: 100%; /* Fill the width of the container */
     animation: slide 8s linear infinite; /* Apply animation */
+    font-family: 'Lora', 'serif';
   }
   
   /* Individual animated text items */
   .animated-text span {
     display: block;
-    font-size: 20px; /* Adjust font size */
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
     padding: 8px 5px; /* Space around text */
     color:#EEE0CB; /* Change color to match your design */
     height: 40px; /* Ensure height matches container */
