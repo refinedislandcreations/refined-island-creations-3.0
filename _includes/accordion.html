@@ -1,0 +1,30 @@
+<div class="border-b border-zinc-800" x-data="{ selected: null }">
+
+    {% for item in include.accordion-source %}
+  
+      <div class="relative border-t border-zinc-800">
+  
+        <button type="button" class="py-6 block w-full" 
+                @click="selected = (selected !== {{ forloop.index }}) ? {{ forloop.index }} : null">
+          <div class="flex items-center justify-between">
+            <h4 class="mb-0 uppercase tracking-wide">{{ item.title }}</h4>
+            <span x-text="selected === {{ forloop.index }} ? '-' : '+'"></span>
+          </div>
+        </button>
+  
+        <div class="relative overflow-hidden transition-all duration-700" 
+              x-cloak
+              x-show="selected === {{ forloop.index }}"
+              x-ref="container{{ forloop.index }}">
+          <div class="pb-6">
+            <p class="mb-0">{{ item.description }}</p>
+          </div>
+        </div>
+  
+      </div>
+  
+    {% endfor %}
+  
+  </div>
+  
+  

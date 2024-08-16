@@ -1,0 +1,40 @@
+<div class="calculator sm:flex sm:gap-4 shadow-2xl text-[#EEE0CB] max-w-full sm:max-w-[90vw]">
+
+    <div class="sm:w-1/2">
+        <div>
+            <label for="price"> Price per Night (in USD): </label>
+            <input type="text" id="price" placeholder="e.g. $500" class="placeholder:text-[#002e24]">
+        </div>
+        <div>
+            <label for="rooms"> Number of Rooms: </label>
+            <input type="number" id="rooms" placeholder="e.g. 20" class="placeholder:text-[#002e24]">
+        </div>
+        <div>
+            <label for="percentage"> Booking Platform Fee (in percentages): </label>
+            <input type="text" id="percentage" placeholder="e.g. 15%" class="placeholder:text-[#002e24]">
+        </div>
+        <div>
+            <button id="calculateBtn" class="mt-5p"> Calculate Lost Revenue Now </button>
+        </div>
+    </div>
+
+    <div class="sm:w-1/2 sm:mt-4 bg-[#fbf7f1]">
+        <div class="results text-center">
+            <p class="text-2xl md:text-3xl  md:mt-[20px] pb-5p"> Stop Waving Your Profits Goodbye! </p>
+            <p>Per Day: <span class="text-2xl sm:text-3xl text-[#e01927] text-center">
+                <span id="savingsPerDay" data-count="0">0.00</span> <!-- Initial value is 0 -->
+            </span></p>
+            <p>Per Week: <span class="text-2xl sm:text-3xl text-[#e01927] text-center">
+                <span id="savingsPerWeek" data-count="0">0.00</span> <!-- Initial value is 0 -->
+            </span></p>
+            <p>Per Month: <span class="text-2xl sm:text-3xl text-[#e01927] text-center">
+                <span id="savingsPerMonth" data-count="0">0.00</span> <!-- Initial value is 0 -->
+            </span></p>
+            <p>Per Year: <span class="text-2xl sm:text-3xl text-[#e01927] text-center">
+                <span id="savingsPerYear" data-count="0">0.00</span> <!-- Initial value is 0 -->
+            </span></p>
+            
+            
+        </div>
+    </div>
+</div>
