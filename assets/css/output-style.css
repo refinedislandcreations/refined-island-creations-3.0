@@ -675,6 +675,9 @@ a {
 .whitespace-nowrap {
   white-space: nowrap;
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2928,6 +2931,10 @@ input[type="number"] {
   }
   .sm\:text-3xl {
     font-size: 1.875rem;
+    line-height: 1;
+  }
+  .sm\:text-4xl {
+    font-size: 2.25rem;
     line-height: 1;
   }
   .sm\:text-5xl {
