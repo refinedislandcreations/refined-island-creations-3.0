@@ -751,6 +751,9 @@ a {
 .p-5p {
   padding: 5%;
 }
+.p-8 {
+  padding: 2rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2697,41 +2700,73 @@ input[type="number"] {
     transform: scale(1.1); 
 }
 
+
+
+
+/* Testimonial carousel */
+
+
+
+
 .placeholder\:uppercase::-moz-placeholder {
   text-transform: uppercase;
 }
+
+
+
 
 .placeholder\:uppercase::placeholder {
   text-transform: uppercase;
 }
 
+
+
+
 .placeholder\:tracking-widest::-moz-placeholder {
   letter-spacing: 0.1em;
 }
 
+
+
+
 .placeholder\:tracking-widest::placeholder {
   letter-spacing: 0.1em;
 }
+
+
+
 
 .placeholder\:text-\[\#839788\]::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(131 151 136 / var(--tw-text-opacity));
 }
 
+
+
+
 .placeholder\:text-\[\#839788\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(131 151 136 / var(--tw-text-opacity));
 }
+
+
+
 
 .hover\:bg-\[\#47544a\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(71 84 74 / var(--tw-bg-opacity));
 }
 
+
+
+
 .hover\:text-\[\#EEE0CB\]:hover {
   --tw-text-opacity: 1;
   color: rgb(238 224 203 / var(--tw-text-opacity));
 }
+
+
+
 
 @media (min-width: 640px) {
   .sm\:col-span-2 {
@@ -2912,6 +2947,9 @@ input[type="number"] {
   }
 }
 
+
+
+
 @media (min-width: 768px) {
   .md\:-ml-\[60\%\] {
     margin-left: -60%;
@@ -2950,6 +2988,9 @@ input[type="number"] {
     padding-top: 10%;
   }
 }
+
+
+
 
 @media (min-width: 1024px) {
   .lg\:col-span-1 {
@@ -3021,6 +3062,9 @@ input[type="number"] {
   }
 }
 
+
+
+
 @media (min-width: 1280px) {
   .xl\:-ml-\[30\%\] {
     margin-left: -30%;
@@ -3072,11 +3116,17 @@ input[type="number"] {
   }
 }
 
+
+
+
 @media (min-width: 1330px) {
   .min-\[1330px\]\:pb-\[5\%\] {
     padding-bottom: 5%;
   }
 }
+
+
+
 
 @media (min-width: 1536px) {
   .\32xl\:p-0 {
@@ -3097,4 +3147,3 @@ input[type="number"] {
     padding-top: 5%;
   }
 }
-
