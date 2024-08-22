@@ -530,6 +530,12 @@ a {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
+}
 .ml-5p {
   margin-left: 5%;
 }
@@ -551,6 +557,9 @@ a {
 .mt-\[0\.5rem\] {
   margin-top: 0.5rem;
 }
+.mb-15p {
+  margin-bottom: 15%;
+}
 .block {
   display: block;
 }
@@ -568,6 +577,9 @@ a {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+.h-20 {
+  height: 5rem;
 }
 .h-6 {
   height: 1.5rem;
@@ -616,6 +628,9 @@ a {
 }
 .max-w-screen-2xl {
   max-width: 1536px;
+}
+.flex-1 {
+  flex: 1 1 0%;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -734,6 +749,10 @@ a {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -885,12 +904,19 @@ a {
   font-size: 1.125rem;;
   line-height: 1.2;
 }
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 .font-bold {
   font-weight: 700;
+}
+.font-light {
+  font-weight: 300;
 }
 .font-medium {
   font-weight: 500;
