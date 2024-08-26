@@ -1789,5 +1789,35 @@ input[type="number"] {
 
 
 
+.mobile-menu nav {
+    padding: 1rem; /* Adjust padding as needed */
+}
 
-/* Testimonial carousel */
+.submenu {
+    padding-left: 5rem; /* Indent the submenu items */
+    text-decoration: underline;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #000; /* Adjust icon color */
+}
+
+.icon-link i {
+    display: block;
+}
