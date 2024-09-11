@@ -83,6 +83,10 @@ svg {
     background-color: #839788; 
 }
 
+.bg-lightest-green {
+    background-color: #adbab0;
+}
+
 .header-box { 
     margin-top: -10%; 
     margin-left: 75%;

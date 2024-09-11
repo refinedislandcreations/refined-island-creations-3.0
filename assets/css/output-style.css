@@ -716,6 +716,9 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[\#adbab070\] {
+  background-color: #adbab070;
+}
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
@@ -953,6 +956,10 @@ svg {
 
 .bg-lightgreen {
     background-color: #839788; 
+}
+
+.bg-lightest-green {
+    background-color: #adbab0;
 }
 
 .header-box { 
