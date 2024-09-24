@@ -119,3 +119,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //testimonial slider
+
+//lightgallery
+
+// lightgallery
+
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    getCaptionFromTitleOrAlt: false,
+     download: false    
+});
+
+lightGallery(document.getElementById('lg-2'), {
+  speed: 500,
+  getCaptionFromTitleOrAlt: false,
+   download: false    
+});

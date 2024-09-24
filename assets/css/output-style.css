@@ -463,6 +463,9 @@ a {
     max-width: 1536px;
   }
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -545,6 +548,9 @@ a {
 .mt-10p {
   margin-top: 10%;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mt-5p {
   margin-top: 5%;
 }
@@ -568,6 +574,9 @@ a {
 }
 .h-20 {
   height: 5rem;
+}
+.h-24 {
+  height: 6rem;
 }
 .h-6 {
   height: 1.5rem;
@@ -660,6 +669,12 @@ a {
 .justify-between {
   justify-content: space-between;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
 .gap-4 {
   gap: 1rem;
 }
@@ -708,16 +723,12 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(0 63 49 / var(--tw-bg-opacity));
 }
+.bg-\[\#adbab070\] {
+  background-color: #adbab070;
+}
 .bg-agreen {
   --tw-bg-opacity: 1;
   background-color: rgb(0 63 49 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-\[\#adbab070\] {
-  background-color: #adbab070;
 }
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
@@ -742,6 +753,9 @@ a {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .p-10p {
   padding: 10%;
