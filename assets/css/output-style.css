@@ -310,33 +310,6 @@ video {
 [hidden] {
   display: none;
 }
-h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
-}
-h1 {
-  font-size: 1.875rem;
-  line-height: .85;
-}
-h2 {
-  font-size: 1.5rem;
-  line-height: .85;
-}
-h3 {
-  font-size: 1.25rem;
-  font-size: 1.125rem;;
-  line-height: .85;
-}
-h4 {
-  font-size: 1.125rem;;
-  line-height: .85;
-}
-p {
-  font-family: Montserrat, sans-serif;
-  line-height: 1.5rem;
-}
-a {
-  text-decoration-line: none;
-}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -756,13 +729,13 @@ a {
 .p-8 {
   padding: 2rem;
 }
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
-}
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -835,8 +808,8 @@ a {
   font-size: 2.25rem;
   line-height: 1;
 }
-.text-6xl {
-  font-size: 3.75rem;
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 .text-lg {
@@ -890,6 +863,9 @@ a {
 .underline {
   text-decoration-line: underline;
 }
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -909,19 +885,11 @@ a {
   transition-duration: 700ms;
 }
 
-
-/* ----------- Default Styles to apply to the whole project  --------- */
-
-
-/* ----------- ADDITIONAL COMPONENTS  --------- */
-
     
 
 html {
     scroll-behavior: smooth;
       }
-
-
 
 
 /* For regular laptops and smaller screens */
@@ -952,6 +920,10 @@ svg {
     color: #839788; 
 }
 
+.text-lightest-green {
+    color: #adbab0;
+}
+
 .bg-lightgreen {
     background-color: #839788; 
 }
@@ -970,7 +942,7 @@ svg {
 .mid-title {
     font-family: 'Lora', 'serif';
     text-transform: uppercase;
-    font-size: 1.5rem; /* 24px */
+    font-size: 2rem; 
     line-height: 2rem; /* 32px */
   }
 
@@ -1104,6 +1076,7 @@ svg {
 }
 
 
+
 /* Header */
 
 .hamburger-wrapper {
@@ -1144,22 +1117,16 @@ svg {
 
 .mobile-menu {
     display: none;
-    background-color: #001410;
-    border-left-width: 2px;
-    border-color: #839788;
-    color:#EEE0CB; 
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    background-color: #697d6f;
+    color: #001410;
+    padding: 6rem;
     position: fixed;
     top: 0;
     right: 0;
-    text-align: left;
+    text-align: center;
     overflow-y: auto;
     z-index: 50;
 }
-
 
 .mobile-menu.active {
     display: block;
@@ -2421,45 +2388,32 @@ input[type="number"] {
 
 /* Accordion */
 
-.accordion{
-    background-color: #697d6f;
-    color: #EEE0CB;
-  }
-  
-  .accordion .dt a {
-    padding-left: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin: 0.25rem 0;
-    display:block;
+.accordion .dt a {
+    display: block;
     color: #EEE0CB;
     position: relative;
     text-decoration: none;
-  }
+}
 
-  .accordion .dd {
+.accordion .dd {
     padding: 0.5rem;
-  }
-  
-  /* Icon */
-  .accordion .dt a::after {
+}
+
+/* Icon */
+.accordion .dt a::after {
     position: absolute;
     display: block;
     width: 1rem;
     height: 1rem;
     line-height: 1;
-    text-align: center;
     transition: all .35s;
     font-size: 1.5rem;
     content: "+";
-    /*right: 0; */
-  }  
+}
 
-  .open::after {
+.open::after {
     transform: rotateZ(45deg);
-    /*right: 0; */
-  }
-
+}
 
 
   /* Whatsapp */
@@ -2662,10 +2616,6 @@ input[type="number"] {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.2;
   }
 }
 

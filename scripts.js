@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.hamburger-wrapper').click(function() {
-        $('.mobile-menu').toggleClass('active'); // Using toggleClass instead of fadeToggle for CSS control
+        $('.mobile-menu').fadeToggle(300);
         $('.hamburger-menu').toggleClass('active');
     });
 });
@@ -26,95 +26,34 @@ var allPanels = $('.accordion > .dd').hide();
 
 
 
+// AOS
 
+AOS.init();
 
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
 
-    
-function countUpToValue(elementId, targetValue) {
-    const element = document.getElementById(elementId);
-    const duration = 2000; // Adjust the duration (in milliseconds) for the counting animation
-    const startTime = performance.now();
-    const startValue = parseFloat(element.innerText.replace(/[^0-9.]/g, ""));
-    
-    function updateCounter(timestamp) {
-        const elapsedTime = timestamp - startTime;
-        if (elapsedTime < duration) {
-            const progress = elapsedTime / duration;
-            const newValue = startValue + (targetValue - startValue) * progress;
-            element.innerText = "-$" + newValue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: true });
-            requestAnimationFrame(updateCounter);
-        } else {
-            element.innerText = "-$" + targetValue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: true });
-        }
-    }
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-    requestAnimationFrame(updateCounter);
-}
-
-document.getElementById("calculateBtn").addEventListener("click", calculateSavings);
-
-function calculateSavings() {
-    // Get the input values
-    const pricePerNight = parseFloat(document.getElementById("price").value.replace(/[^\d.]/g, ""));
-    const numberOfRooms = parseInt(document.getElementById("rooms").value.replace(/[^\d]/g, ""));
-    const platformPercentage = parseFloat(document.getElementById("percentage").value.replace(/[^\d.]/g, ""));
-
-    // Calculate savings
-    const savingsPerDay = pricePerNight * numberOfRooms * platformPercentage / 100;
-    const savingsPerWeek = savingsPerDay * 7;
-    const savingsPerMonth = savingsPerDay * 30;
-    const savingsPerYear = savingsPerDay * 365;
-
-    // Animate the results
-    countUpToValue("savingsPerDay", savingsPerDay);
-    countUpToValue("savingsPerWeek", savingsPerWeek);
-    countUpToValue("savingsPerMonth", savingsPerMonth);
-    countUpToValue("savingsPerYear", savingsPerYear);
-}
-
-// Add event listeners for input fields
-const priceInput = document.getElementById("price");
-const percentageInput = document.getElementById("percentage");
-
-priceInput.addEventListener("input", formatCurrency);
-percentageInput.addEventListener("input", formatPercentage);
-
-function formatCurrency(event) {
-    const input = event.target;
-    input.value = input.value.replace(/[^0-9.]/g, "");
-    input.value = "$" + input.value;
-}
-
-function formatPercentage(event) {
-    const input = event.target;
-    input.value = input.value.replace(/[^0-9.]/g, "");
-    input.value = input.value + "%";
-}
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        const myForm = event.target;
-        const formData = new FormData(myForm);
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-            .then(() => console.log("Form successfully submitted"))
-            .catch((error) => alert(error));
-    };
-
-    document.querySelector("form").addEventListener("submit", handleSubmit);
 });
-
 
 
 
