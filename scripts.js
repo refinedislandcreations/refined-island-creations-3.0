@@ -1,10 +1,9 @@
 $(document).ready(function() {
     $('.hamburger-wrapper').click(function() {
-        $('.mobile-menu').fadeToggle(500);
+        $('.mobile-menu').toggleClass('active'); // Using toggleClass instead of fadeToggle for CSS control
         $('.hamburger-menu').toggleClass('active');
     });
 });
-
 
 
 
@@ -118,9 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//testimonial slider
 
-//lightgallery
 
 // lightgallery
 
