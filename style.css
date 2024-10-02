@@ -60,7 +60,7 @@ svg {
 .mid-title {
     font-family: 'Lora', 'serif';
     text-transform: uppercase;
-    font-size: 2rem; 
+    font-size: 1.6rem; 
     line-height: 2rem; /* 32px */
   }
 
@@ -102,7 +102,7 @@ svg {
   
   /* Static text styling */
   .static-text {
-    font-size: 2.25rem; /* 36px */
+    font-size: 1.25rem; 
     line-height: 2.5rem; /* 40px */
     color: #839788; 
     white-space: nowrap; /* Prevent text wrapping */
@@ -200,7 +200,7 @@ svg {
 .hamburger-wrapper {
     cursor: pointer;
     display: inline-block;
-    right: 5%;
+    right: 15%;
     top: calc(11vw + 0rem);
     z-index: 1000;
     position: fixed;
@@ -565,6 +565,18 @@ svg {
 }
 
 @media (min-width:640px) {
+
+    .mid-title {
+        font-size: 2rem; 
+      }
+
+    .static-text {
+        font-size: 2.25rem; 
+      }
+
+
+
+
 
     .hamburger-wrapper {
         top: 11.4vw;

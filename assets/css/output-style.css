@@ -506,8 +506,8 @@ video {
 .mr-10p {
   margin-right: 10%;
 }
-.mt-10p {
-  margin-top: 10%;
+.mt-1\/2 {
+  margin-top: 50%;
 }
 .mt-5p {
   margin-top: 5%;
@@ -776,8 +776,8 @@ video {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.text-7xl {
-  font-size: 4.5rem;
+.text-3xl {
+  font-size: 1.875rem;
   line-height: 1;
 }
 .text-lg {
@@ -906,7 +906,7 @@ svg {
 .mid-title {
     font-family: 'Lora', 'serif';
     text-transform: uppercase;
-    font-size: 2rem; 
+    font-size: 1.6rem; 
     line-height: 2rem; /* 32px */
   }
 
@@ -948,7 +948,7 @@ svg {
   
   /* Static text styling */
   .static-text {
-    font-size: 2.25rem; /* 36px */
+    font-size: 1.25rem; 
     line-height: 2.5rem; /* 40px */
     color: #839788; 
     white-space: nowrap; /* Prevent text wrapping */
@@ -1046,7 +1046,7 @@ svg {
 .hamburger-wrapper {
     cursor: pointer;
     display: inline-block;
-    right: 5%;
+    right: 15%;
     top: calc(11vw + 0rem);
     z-index: 1000;
     position: fixed;
@@ -1411,6 +1411,18 @@ svg {
 }
 
 @media (min-width:640px) {
+
+    .mid-title {
+        font-size: 2rem; 
+      }
+
+    .static-text {
+        font-size: 2.25rem; 
+      }
+
+
+
+
 
     .hamburger-wrapper {
         top: 11.4vw;
@@ -2499,6 +2511,9 @@ input[type="number"] {
   .sm\:ml-auto {
     margin-left: auto;
   }
+  .sm\:mt-10p {
+    margin-top: 10%;
+  }
   .sm\:block {
     display: block;
   }
@@ -2520,11 +2535,21 @@ input[type="number"] {
   .sm\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
   .sm\:justify-end {
     justify-content: flex-end;
   }
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
   .sm\:gap-5 {
     gap: 1.25rem;
+  }
+  .sm\:px-10p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .sm\:px-5p {
     padding-left: 5%;
@@ -2537,6 +2562,9 @@ input[type="number"] {
   .sm\:py-5p {
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
   .sm\:pb-\[25\%\] {
     padding-bottom: 25%;
@@ -2556,6 +2584,10 @@ input[type="number"] {
   }
   .sm\:text-4xl {
     font-size: 2.25rem;
+    line-height: 1;
+  }
+  .sm\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
