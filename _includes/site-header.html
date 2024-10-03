@@ -1,7 +1,7 @@
 <header class="max-w-screen-2xl mx-auto relative">
     <section> 
         {% for item in page.header %}
-        <div class="bg-cover bg-center bg-no-repeat relative" style="background-image: url('{{ item.image }}'); height: 100vh !important;">
+        <div class="bg-cover bg-center bg-no-repeat relative" style="background-image: linear-gradient(to right, rgba(21, 19, 18, 0.99), rgba(66, 53, 47, 0)), url('{{ item.image }}'); background-position: {{ item.position }}; height: 100vh !important;">
 
             <div class="px-5p py-10p md:py-5p flex justify-between items-center ">
                 <a href="/index.html" class="w-32 sm:w-48">

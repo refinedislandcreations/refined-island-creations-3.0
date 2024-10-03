@@ -269,19 +269,21 @@ svg {
 }
 
 .responsive-video {
-    max-width: 100%; /* Make the video responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Keeps the video responsive */
+    height: 60vh; /* Desired height for the video */
+    display: block; /* Ensures the video acts as a block element */
+    margin: 0 auto; /* Centers the video horizontally */
 }
 
 .live-site-button {
-    display: inline-block; /* Make it a block element */
-    margin-top: 10px; /* Space above the button */
-    padding: 10px 20px; /* Padding around the button */
+    display: inline-block; /* Allows it to behave like a button */
+    margin-top: 10px; /* Adjust the spacing between video and button */
+    padding: 10px 20px; /* Padding inside the button */
     background-color: #697d6f; /* Button background color */
     color: #EEE0CB; /* Button text color */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* Remove the underline */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Transition effect */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .live-site-button:hover {
