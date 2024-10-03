@@ -15,11 +15,21 @@ seo:
   social_image: 
   hide-from-google: true
 header:
- - image: /images/express-edition-website-design-development-refined-island-creations.png
-   position: 
+ - image: /images/tailored-masterpiece-website-design-development-refined-island-creations-bali.png
+   position: 50% 50%
    label: 
    title: The Tailored Masterpiece
    text: A fully customized website experience, <span class="font-bold ">designed and coded from the ground up</span> to reflect your business’s identity and story.
+slider:
+- title: Pondok Santi Estate
+  image: /images/pondok-santi-estate-refined-island-creations-web-design-development.png
+  url:
+- title: Dejama Glamping Resort
+  image: /images/dejama-resort-refined-island-creations-web-design-development.png
+  url:
+- title: AJ Hackett International
+  image: /images/aj-hackett-international-website-design-developoment-refined-island-creations-bali.png
+  url:
 ---
 
 <!---------Starting at------------->
@@ -36,6 +46,36 @@ header:
       </div>
     </div>
   </section>
+
+
+<!---------Examples------------->
+<section class="max-w-screen-2xl mx-auto px-10p pt-10p pb-5p">
+  <div class="grid grid-cols-6 gap-4">
+    <div class="col-span-2">
+      <p class="mid-title">Tailored Masterpiece in Action</p>
+    </div>
+    <div class="col-span-4">    </div>
+    <div class="col-span-2">    </div>
+    <div class="col-span-4 text-border-top px-5p">
+      <p class="mt-5p mb-2p">Our most sophisticated package has resulted in stunning, fully customized websites that reflect the unique character of each client. Below are a few standout examples of businesses that have chosen the Tailored Masterpiece, benefiting from the bespoke design and functionality that makes their online presence truly exceptional.</p>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-screen-2xl mx-auto pl-10p"></section>
+  <div class="overflow-x-auto whitespace-nowrap py-4">
+      <div class="flex items-start">
+          {% for item in page.slider %}
+              <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group">
+                  <img class="w-full h-80 object-cover" src="{{ item.image }}" alt="{{ item.title }}" />
+                  <div class="absolute inset-x-0 bottom-0 bg-[#adbab070] text-dark bg-opacity-75 p-3 flex items-center justify-between">
+                      <span class="text-lg font-semibold">{{ item.title }}</span>
+                  </div>
+              </a>
+          {% endfor %}
+      </div>
+  </div>
+</section>
 
 
 <!---------Who this is for------------->
