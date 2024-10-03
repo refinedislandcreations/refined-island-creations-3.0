@@ -260,6 +260,40 @@ svg {
 }
 
 
+
+
+/*design videos*/
+
+.video-container {
+    text-align: center; /* Center the video and button */
+}
+
+.responsive-video {
+    max-width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.live-site-button {
+    display: inline-block; /* Make it a block element */
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 20px; /* Padding around the button */
+    background-color: #697d6f; /* Button background color */
+    color: #EEE0CB; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.live-site-button:hover {
+    background-color: #839689; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
 /* Header Banners */
 
 @media (min-width:300px) {
