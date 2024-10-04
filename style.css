@@ -42,6 +42,10 @@ svg {
     color: #adbab0;
 }
 
+.bg-green-dark {
+    background-color: #697d6f;
+}
+
 .bg-lightgreen {
     background-color: #839788; 
 }
