@@ -79,6 +79,10 @@ svg {
     border-color: #839788;
 }
 
+.text-border-bottom {
+    border-bottom-width: 2px;
+    border-color: #839788;
+}
 
 
 
@@ -1584,9 +1588,6 @@ input[type="number"] {
     text-decoration: none;
 }
 
-.accordion .dd {
-    padding: 0.5rem;
-}
 
 /* Icon */
 .accordion .dt a::after {
