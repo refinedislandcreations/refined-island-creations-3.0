@@ -94,10 +94,10 @@ slider:
         <!-- Content Box -->
         <div class="flex-grow flex flex-col justify-between">
           <!-- Package Name -->
-          <p class="text-xl font-medium mb-2p text-left">The Express Edition</p>
+          <p class="text-xl font-medium pb-2p text-left">The Express Edition</p>
           
           <!-- Price -->
-          <p class="text-3xl font-bold mb-5p text-left">$500</p>
+          <p class="text-3xl font-semibold mb-5p text-left">$500</p>
           
           <!-- Description -->
           <p class="text-left mb-5p">A beautifully designed, custom-coded one-page website delivered in just one week. Ideal for small businesses wanting to enhance their online presence and SEO with a professional touch.</p>
@@ -114,11 +114,11 @@ slider:
         <!-- Content Box -->
         <div class="flex-grow flex flex-col justify-between">
           <!-- Package Name -->
-          <p class="text-xl font-medium mb-2p text-left">The Curated Blend</p>
+          <p class="text-xl font-medium pb-2p text-left">The Curated Blend</p>
           
           <!-- Price -->
           <p class="text-xs">Starting at</p>
-          <p class="text-3xl font-bold mb-5p text-left">$800</p>
+          <p class="text-3xl font-semibold mb-5p text-left">$800</p>
           
           <!-- Description -->
           <p class="text-left mb-5p">A custom-coded one-page website with a 1.5-week turnaround. Mix and match sections for a personalized site that enhances your brand’s uniqueness.</p>
@@ -135,11 +135,11 @@ slider:
         <!-- Content Box -->
         <div class="flex-grow flex flex-col justify-between">
           <!-- Package Name -->
-          <p class="text-xl font-medium mb-2p text-left">The Tailored Masterpiece</p>
+          <p class="text-xl font-medium pb-2p text-left">The Tailored Masterpiece</p>
           
           <!-- Price -->
           <p class="text-xs">Starting at</p>
-          <p class="text-3xl font-bold mb-5p text-left">$2,500</p>
+          <p class="text-3xl font-semibold mb-5p text-left">$2,500</p>
           
           <!-- Description -->
           <p class="text-left mb-5p">A fully custom-designed and coded luxury website, tailored to your specific needs. Our team crafts a unique site from the ground up, ensuring every detail aligns with your vision.</p>
@@ -163,7 +163,7 @@ slider:
 <section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p sm:py-5p">
   <div class="sm:grid sm:grid-cols-6">
     <div class="col-span-2">
-      <p class="mid-title">Featured Projects</p>
+      <p class="mid-title pb-2p sm:pb-0">Featured Projects</p>
     </div>
     <div class="col-span-4">    </div>
     <div class="col-span-2">    </div>
@@ -173,8 +173,8 @@ slider:
   </div>
 </section>
 
-<section class="max-w-screen-2xl mx-auto pl-10p">
-  <div class="overflow-x-auto whitespace-nowrap py-4">
+<section class="max-w-screen-2xl mx-auto pl-10p pb-15p sm:pb-0">
+  <div class="overflow-x-auto whitespace-nowrap sm:py-5p">
       <div class="flex items-start">
           {% for item in page.slider %}
               <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group">
@@ -192,17 +192,17 @@ slider:
 
 
 <!---------Reasons to have a website ------------->
-<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p sm:py-5p">
+<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-15p sm:py-10p">
   <div class="md:grid md:grid-cols-6 md:gap-4">
     <div class="col-span-2">
-      <p class="mid-title">Why Your Business Deserves a Website</p>
+      <p class="mid-title pb-2p sm:pb-0">Why Your Business Deserves a Website</p>
     </div>
     <div class="col-span-4">
     </div>
     <div class="col-span-2">
     </div>
     <div class="col-span-4 text-border-top px-5p">
-      <ul class="ml-5p" style="list-style-type: disc;">
+      <ul class="ml-5p mt-5p" style="list-style-type: disc;">
         <li class="mt-5p mb-2p"><strong>Go Beyond Social Media:</strong> Social media is great, but it’s just the beginning. A website adds depth and authority, helping your business truly stand out.</li>
         <li class="mb-2p"><strong>Unlock the Power of SEO:</strong> A website optimized for search engines boosts your visibility, making it simple for potential guests to discover you.</li>
         <li class="mb-2p"><strong>Showcase Professionalism:</strong> A well-crafted website isn’t just about looking good—it’s about building trust and showing that you’re serious about your business.</li>
@@ -218,11 +218,11 @@ slider:
 
 <!---------About Us------------->
 
-<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p sm:py-5p">
+<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p sm:py-5p" id="about">
   <div class="md:grid md:grid-cols-6 md:gap-4">
     <!-- Title Row: Full width on both small and medium screens -->
     <div class="col-span-6 md:col-span-2">
-      <p class="mid-title">Behind The Vision</p>
+      <p class="mid-title pb-2p sm:pb-0">Behind The Vision</p>
     </div>
     <div class="hidden md:block col-span-4"></div> <!-- Empty space next to the title on md+ screens -->
 
@@ -241,8 +241,8 @@ slider:
     </div>
 
     <!-- Image below text on small screens -->
-    <div class="flex justify-start mt-5p md:hidden">
-      <img class="w-full h-auto max-h-50vh object-cover object-center" src="/images/julia-rees-refined-island-creations.jpg" alt="Julia Rees">
+    <div class="flex justify-start mt-5p min-h-40 md:hidden">
+      <img class="w-full h-auto object-cover object-center" src="/images/julia-rees-refined-island-creations.jpg" alt="Julia Rees">
     </div>
   </div>
 </section>

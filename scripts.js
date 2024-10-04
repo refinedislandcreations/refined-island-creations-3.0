@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.hamburger-wrapper').click(function() {
-        $('.mobile-menu').fadeToggle(300);
+        $('.mobile-menu').fadeToggle(500);
         $('.hamburger-menu').toggleClass('active');
     });
 });

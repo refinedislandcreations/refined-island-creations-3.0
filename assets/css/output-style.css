@@ -484,8 +484,14 @@ video {
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-10p {
+  margin-bottom: 10%;
+}
 .mb-15p {
   margin-bottom: 15%;
+}
+.mb-2p {
+  margin-bottom: 2%;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -742,6 +748,9 @@ video {
 }
 .pb-15p {
   padding-bottom: 15%;
+}
+.pb-2p {
+  padding-bottom: 2%;
 }
 .pb-5p {
   padding-bottom: 5%;
@@ -1089,16 +1098,17 @@ svg {
 
 .mobile-menu {
     display: none;
-    background-color: #697d6f;
-    color: #001410;
-    padding: 6rem;
+    background-color: #001410; 
+    color: #EEE0CB; 
+    padding: 5%;
     position: fixed;
     top: 0;
-    left: 0;  /* Change from right: 0 to left: 0 */
-    width: 100%;  /* Make the menu full width */
+    left: 0; /* Full width from the left */
+    width: 100%; /* Full width menu */
     text-align: left;
     overflow-y: auto;
     z-index: 50;
+    border-bottom: 3px solid #697d6f; /* Add bottom border */
 }
 
 .mobile-menu.active {
@@ -1124,7 +1134,7 @@ svg {
 
 .responsive-video {
     max-width: 100%; /* Keeps the video responsive */
-    height: 60vh; /* Desired height for the video */
+    height: 40vh; /* Desired height for the video */
     display: block; /* Ensures the video acts as a block element */
     margin: 0 auto; /* Centers the video horizontally */
 }
@@ -1468,6 +1478,10 @@ svg {
     .animated-text span {
     font-size: 3.55rem; 
   }
+
+  .responsive-video {
+    height: 60vh; /* Desired height for the video */
+}
 
 
 
@@ -2511,15 +2525,6 @@ input[type="number"] {
     padding: 1rem; /* Adjust padding as needed */
 }
 
-.submenu {
-    padding-left: 5rem; /* Indent the submenu items */
-    text-decoration: underline;
-}
-
-.submenu a {
-    display: block;
-    padding: 0.5rem 0;
-}
 
 .social-links {
     display: flex;
@@ -2577,6 +2582,9 @@ input[type="number"] {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
   .sm\:ml-auto {
     margin-left: auto;
   }
