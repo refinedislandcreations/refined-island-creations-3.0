@@ -1086,8 +1086,9 @@ svg {
     padding: 6rem;
     position: fixed;
     top: 0;
-    right: 0;
-    text-align: center;
+    left: 0;  /* Change from right: 0 to left: 0 */
+    width: 100%;  /* Make the menu full width */
+    text-align: left;
     overflow-y: auto;
     z-index: 50;
 }
@@ -1099,7 +1100,6 @@ svg {
 .mobile-menu a {
     text-decoration: none; 
     color: inherit; 
-    padding: 1rem;
     display: block;
     font-weight: normal;
     font-size: 1.5rem;
