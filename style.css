@@ -68,6 +68,14 @@ svg {
     line-height: 2rem; /* 32px */
   }
 
+
+.mixmatch-title {
+    font-family: 'Lora', 'serif';
+    text-transform: uppercase;
+    font-size: 1.4rem; 
+    line-height: 2rem; /* 32px */
+  }
+
 .text-border {
     border-left-width: 2px;
     border-color: #839788;
@@ -85,7 +93,13 @@ svg {
 }
 
 
+.nav-height {
+    height: 1.9rem;
+}
 
+.nav-gap {
+    gap: 0.5rem;
+}
 
 
 /*Sliding text*/
@@ -383,6 +397,16 @@ svg {
 
 
 @media (min-width:330px) {
+
+    .nav-height {
+        height: 2.1rem;
+    }
+
+
+
+
+
+
     .responsive-header {
         font-size: 3.3rem;
     }
@@ -409,6 +433,15 @@ svg {
 }
 
 @media (min-width:360px) {
+
+    .nav-height {
+        height: 2.3rem;
+    }
+    
+
+
+
+
     .responsive-header {
         font-size: 3.6rem;
     }
@@ -463,6 +496,19 @@ svg {
 }
 
 @media (min-width:420px) {
+
+    .nav-height {
+        height: 2.6rem;
+    }
+    
+    .nav-gap {
+        gap: 0.8rem;
+    }
+
+
+
+
+
     .responsive-header {
         font-size: 4.2rem;
     }
@@ -521,6 +567,15 @@ svg {
 }
 
 @media (min-width:480px) {
+
+    .nav-height {
+        height: 3rem;
+    }
+    
+  
+
+
+
     .responsive-header {
         font-size: 4.8rem;
     }
@@ -564,6 +619,17 @@ svg {
 }
 
 @media (min-width:540px) {
+
+    .nav-height {
+        height: 3.3rem;
+    }
+    
+ 
+
+
+
+
+
     .responsive-header {
         font-size: 5.4rem;
     }
@@ -609,6 +675,10 @@ svg {
 }
 
 @media (min-width:640px) {
+
+    .nav-height {
+        height: 3.7rem;
+    }
 
     .mid-title {
         font-size: 2rem; 
@@ -707,6 +777,14 @@ svg {
 }
 
 @media (min-width:702px) {
+
+    .nav-height {
+        height: 4.2rem;
+    }
+
+
+
+
     .index-main-picture {
         margin-top: -30%;
     }
@@ -880,6 +958,12 @@ svg {
 }
 
 @media (min-width:800px) {
+
+    .nav-height {
+        height: 4.8rem;
+    }
+
+
     .responsive-header {
         font-size: 6.5rem;
     }
