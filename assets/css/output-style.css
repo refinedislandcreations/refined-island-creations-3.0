@@ -532,9 +532,6 @@ video {
 .h-20 {
   height: 5rem;
 }
-.h-24 {
-  height: 6rem;
-}
 .h-6 {
   height: 1.5rem;
 }
@@ -546,6 +543,9 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.min-h-30 {
+  min-height: 30vh;
 }
 .min-h-40 {
   min-height: 40vh;
@@ -592,9 +592,6 @@ video {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -619,17 +616,11 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.gap-10 {
-  gap: 2.5rem;
-}
 .gap-3 {
   gap: 0.75rem;
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-5 {
-  gap: 1.25rem;
 }
 .self-start {
   align-self: flex-start;
@@ -698,9 +689,6 @@ video {
   -o-object-position: center;
      object-position: center;
 }
-.p-10p {
-  padding: 10%;
-}
 .p-3 {
   padding: 0.75rem;
 }
@@ -748,6 +736,9 @@ video {
 }
 .pb-15p {
   padding-bottom: 15%;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .pb-2p {
   padding-bottom: 2%;
@@ -2697,9 +2688,6 @@ input[type="number"] {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -2738,9 +2726,6 @@ input[type="number"] {
   .sm\:pb-\[25\%\] {
     padding-bottom: 25%;
   }
-  .sm\:pl-5p {
-    padding-left: 5%;
-  }
   .sm\:pt-10p {
     padding-top: 10%;
   }
@@ -2771,6 +2756,9 @@ input[type="number"] {
   .md\:block {
     display: block;
   }
+  .md\:flex {
+    display: flex;
+  }
   .md\:grid {
     display: grid;
   }
@@ -2780,11 +2768,17 @@ input[type="number"] {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .md\:gap-4 {
     gap: 1rem;
+  }
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
   .md\:px-0 {
     padding-left: 0px;
@@ -2799,6 +2793,9 @@ input[type="number"] {
   }
   .md\:pb-20p {
     padding-bottom: 20%;
+  }
+  .md\:pl-5p {
+    padding-left: 5%;
   }
   .md\:pt-10p {
     padding-top: 10%;

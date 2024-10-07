@@ -43,9 +43,9 @@ project:
    url: https://dejamaresort.com/
  - name: AJ Hackett International
    is_testimonial: true
-   logo: /images/aj-hackett-international-website-design-developoment-refined-island-creations-bali.png
+   logo: 
    option: 
-   image: 
+   image: /images/aj-hackett-international-website-design-developoment-refined-island-creations-bali.png
    image-position: 50% 50%
    image-alt: 
    about: 
@@ -85,24 +85,24 @@ project:
 ---
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="p-10p">
+  <div class="px-5p sm:px-10p py-10p">
     {% for site in page.project %}
-      <div class="sm:grid sm:grid-cols-5 gap-5 mb-15p">
+      <div class="md:grid md:grid-cols-5 md:gap-5 mb-15p">
         <div class="col-span-2">
           <a href="{{ site.url }}">
-            <div class="relative h-full min-h-40 sm:min-h-50">
+            <div class="relative h-full min-h-30 sm:min-h-50">
               <img class="absolute inset-0 w-full h-full object-cover"
                 src="{{ site.image }}" 
                 style="object-position: {{ site.image-position }};" 
                 alt="{{ site.image-alt }}" />
             </div>
           </a>
-          <a href="{{ site.url }}" class="text-right flex items-center justify-end">
+          <a href="{{ site.url }}" class="text-right flex items-center justify-end pt-2p pb-5p">
             <span>Visit the website</span> 
             <i class="fa-solid fa-chevron-right ml-2"></i>
           </a>
         </div>
-        <div class="col-span-3 sm:pl-5p">
+        <div class="col-span-3 md:pl-5p">
           <div class="flex items-center mb-5p">
             <p class="text-2xl sm:text-4xl flex-1">
               {{ site.name }}
@@ -112,7 +112,7 @@ project:
               <img src="{{ site.logo }}" alt="{{ site.name }} logo" class="h-20 ml-3 object-contain"/>
             {% endif %}
           </div>
-          <p class="pb-10p"> 
+          <p> 
             {% if site.is_testimonial %}
               "<span>{{ site.about }}</span>"<br>
               <span class="text-sm font-light">- {{ site.author }}</span>
