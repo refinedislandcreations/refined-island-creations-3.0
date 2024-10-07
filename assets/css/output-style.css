@@ -893,20 +893,12 @@ svg {
     background-color: #adbab0;
 }
 
-.header-box { 
-    margin-top: -10%; 
-    margin-left: 75%;
-  }
-
-
-
 .mid-title {
     font-family: 'Lora', 'serif';
     text-transform: uppercase;
     font-size: 1.6rem; 
     line-height: 2rem; /* 32px */
   }
-
 
 .mixmatch-title {
     font-family: 'Lora', 'serif';
@@ -1008,52 +1000,6 @@ svg {
   }
   
   
-
-.line-top {
-    border-width: 2px;
-    border-bottom-width: 0px;
-    margin-top: 1rem; /* 16px */
-    margin-bottom: 1rem; /* 16px */
-    margin-left: -5vw;
-    width: 60%;
-    border-color: #839788;
-    margin-top: 5%;
-}
-
-.line-bottom {
-    border-width: 2px;
-    border-bottom-width: 0px;
-    margin-top: 1rem; /* 16px */
-    margin-bottom: 1rem; /* 16px */
-    margin-left: -5vw;
-    width: 40%;
-    border-color: #839788;
-    margin-bottom: 5%;
-}
-
-.line-top-right {
-    border-width: 2px;
-    border-bottom-width: 0px;
-    margin-bottom: 1rem; /* 16px */
-    margin-left: auto; /* Align to the right side of the screen */
-    margin-right: 0; /* Reset margin-right */
-    width: 60%;
-    border-color: #839788;
-    margin-top: 5%;
-}
-
-.line-bottom-right {
-    border-width: 2px;
-    border-bottom-width: 0px;
-    margin-top: 1rem; /* 16px */
-    margin-left: auto; /* Align to the right side of the screen */
-    margin-right: 0; /* Reset margin-right */
-    width: 40%;
-    border-color: #839788;
-    margin-bottom: 5%;
-}
-
-
 
 /* Header */
 
@@ -1164,66 +1110,7 @@ nav {
 /* Header Banners */
 
 @media (min-width:300px) {
-    .responsive-header {
-        font-size: 3rem;
-    }
-    .subheading-responsive {
-        font-size: 1.3rem;
-    }
-    .index-main-picture {
-        margin-top: 50.9%;
-    }
-    .services-main-picture {
-        margin-top: 26.9%;
-    }
-    .portfolio-main-picture {
-        margin-top: 25%;
-    }
-    .pricing-main-picture {
-        margin-top: 27%;
-    }
-    .about-main-picture {
-        margin-top: 78%;
-    }
-    .contact-main-picture {
-        margin-top: 25%;
-    }
-    .service-names {
-        font-size: 2.9rem;
-    }
-    .padding-website-service {
-        padding-bottom: 20%;
-    }
-
-    .padding-sm-service {
-        padding-bottom: 20%;
-    }
-
-    .process-pricing-title {
-        font-size: 2.9rem;
-    }
-
-    .portfolio-title {
-        font-size: 2.8rem;
-        line-height: 2.5rem;
-    }
-
-    .portfolio-title-padding {
-        padding-bottom: 24%;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 10%;
-    }
-
-    .portfolio-video-width {
-        max-width: 18rem;
-    }
-
-    .accordion-title {
-        margin-right: 3%;
-    }
-
+    
     .accordion .dt a::after {
         top: 1.8rem;
         right: 0.9rem;
@@ -1233,9 +1120,6 @@ nav {
         padding-right: 3%;
       }
 
-      .img-height {
-        min-height: 30vh;
-      }
 }
 
 
@@ -1243,31 +1127,6 @@ nav {
 
     .nav-height {
         height: 2.1rem;
-    }
-
-
-
-
-
-
-    .responsive-header {
-        font-size: 3.3rem;
-    }
-    .service-names {
-        font-size: 3.2rem;
-    }
-
-    .process-pricing-title {
-        font-size: 3.2rem;
-    }
-
-    .portfolio-title {
-        font-size: 3rem;
-        line-height: 2.7rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 19.8rem;
     }
 
     .accordion .dt a {
@@ -1281,30 +1140,6 @@ nav {
         height: 2.3rem;
     }
     
-
-
-
-
-    .responsive-header {
-        font-size: 3.6rem;
-    }
-    .service-names {
-        font-size: 3.5rem;
-    }
-
-    .process-pricing-title {
-        font-size: 3.5rem;
-    }
-
-    .portfolio-title {
-        font-size: 3.3rem;
-        line-height: 3rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 21.7rem;
-    }
-
     .accordion .dt a {
         padding-right: 13%;
       }
@@ -1312,30 +1147,10 @@ nav {
 
 @media (min-width:390px) {
 
-    .hamburger-wrapper {
-        top: 10.7vw;
-      }
-
-    .responsive-header {
-        font-size: 3.9rem;
-    }
-    .index-main-picture {
-        margin-top: 50.4%;
-    }
-    .padding-website-service {
-        padding-bottom: 20%;
-        padding-left: 5%;
-    }
-
-    .portfolio-video-width {
-        max-width: 23.5rem;
-    }
-
     .accordion .dt a::after {
         top: 1.3rem;
         right: 1.1rem;
       }
-    
 }
 
 @media (min-width:420px) {
@@ -1347,67 +1162,9 @@ nav {
     .nav-gap {
         gap: 0.8rem;
     }
-
-
-
-
-
-    .responsive-header {
-        font-size: 4.2rem;
-    }
-    .padding-website-service {
-        padding-bottom: 20%;
-        padding-left: 15%;
-    }
-
-    .padding-sm-service {
-        padding-bottom: 18%;
-    }
-
-    .portfolio-title {
-        font-size: 3.7rem;
-        line-height: 3.3rem;
-    }
-
-    .portfolio-title-padding {
-        padding-bottom: 23%;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 9%;
-    }
-
-    .portfolio-video-width {
-        max-width: 25.4rem;
-    }
-
-    .img-height {
-        min-height: 40vh;
-      }
-
 }
 
-@media (min-width:450px) {
-    .responsive-header {
-        font-size: 4.5rem;
-    }
-    .service-names {
-        font-size: 4rem;
-    }
 
-    .process-pricing-title {
-        font-size: 4rem;
-    }
-
-    .portfolio-title {
-        font-size: 4rem;
-        line-height: 3.5rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 27.3rem;
-    }
-}
 
 @media (min-width:480px) {
 
@@ -1415,101 +1172,22 @@ nav {
         height: 3rem;
     }
     
-  
-
-
-
-    .responsive-header {
-        font-size: 4.8rem;
-    }
-
-    .portfolio-title {
-        font-size: 4.2rem;
-        line-height: 3.7rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 29.2rem;
-    }
-
     .accordion .dt a::after {
         top: 1.4rem;
         right: 1.2rem;
       }
-
 }
 
-@media (min-width:510px) {
-    .responsive-header {
-        font-size: 5.1rem;
-    }
-    .service-names {
-        font-size: 4.5rem;
-    }
 
-    .process-pricing-title {
-        font-size: 4.5rem;
-    }
-
-    .portfolio-title {
-        font-size: 4.4rem;
-        line-height: 3.9rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 31rem;
-    }
-}
 
 @media (min-width:540px) {
 
     .nav-height {
         height: 3.3rem;
     }
-    
- 
-
-
-
-
-
-    .responsive-header {
-        font-size: 5.4rem;
-    }
-
-    .portfolio-title-padding {
-        padding-bottom: 21.8%;
-      }
-
-    .portfolio-video-width {
-        max-width: 33rem;
-    }
 }
 
 @media (min-width:570px) {
-
-    .hamburger-wrapper {
-        top: 10.5vw;
-      }
-
-    .responsive-header {
-        font-size: 5.7rem;
-    }
-    .service-names {
-        font-size: 5rem;
-    }
-    .process-pricing-title {
-        font-size: 5rem;
-    }
-
-    .portfolio-title {
-        font-size: 4.8rem;
-        line-height: 4.3rem;
-      }
-
-    .portfolio-video-width {
-        max-width: 35rem;
-    }
 
     .accordion .dt a::after {
         top: 1.6rem;
@@ -1531,92 +1209,13 @@ nav {
         font-size: 2.25rem; 
       }
 
-  
     .animated-text span {
     font-size: 3.55rem; 
   }
 
   .responsive-video {
     height: 60vh; /* Desired height for the video */
-}
-
-
-
-    .hamburger-wrapper {
-        top: 11.4vw;
-      }
-
-    .subheading-responsive {
-        font-size: 2rem;
-    }
-
-    .index-main-picture {
-        margin-top: 15%;
-    }
-    .index-second-picture {
-        margin-top: 35%;
-    }
-
-    .services-main-picture {
-        margin-top: 0;
-    }
-    .services-second-picture {
-        margin-top: -20%;
-    }
-
-    .portfolio-main-picture {
-        margin-top: 0;
-    }
-    .portfolio-second-picture {
-        margin-top: -20%;
-    }
-
-    .pricing-main-picture {
-        margin-top: -20%;
-    }
-    .pricing-second-picture {
-        margin-top: 0;
-    }
-
-    .about-main-picture {
-        margin-top: 20%;
-    }
-    .about-second-picture {
-        margin-top: 40%;
-    }
-
-    .contact-main-picture {
-        margin-top: -5%;
-    }
-    .contact-second-picture {
-        margin-top: -25%;
-    }
-    .service-names {
-        font-size: 5.3rem;
-    }
-
-    .padding-website-service {
-        padding-bottom: 15%;
-        padding-left: 0;
-    }
-
-    .process-pricing-title {
-        font-size: 5.3rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 39rem;
-    }
-
-    .portfolio-title {
-        font-size: 5.4rem;
-        line-height: 4.8rem;
-      }
-
-      .img-height {
-        min-height: 30vh;
-      }
-
+   }
 }
 
 @media (min-width:702px) {
@@ -1624,65 +1223,6 @@ nav {
     .nav-height {
         height: 4.2rem;
     }
-
-
-
-
-    .index-main-picture {
-        margin-top: -30%;
-    }
-    .index-second-picture {
-        margin-top: -10%;
-    }
-
-    .services-main-picture {
-        margin-top: -10%;
-    }
-    .services-second-picture {
-        margin-top: -30%;
-    }
-
-    .portfolio-main-picture {
-        margin-top: -10%;
-    }
-    .portfolio-second-picture {
-        margin-top: -30%;
-    }
-
-
-    .pricing-main-picture {
-        margin-top: -30%;
-    }
-    .pricing-second-picture {
-        margin-top: -10%;
-    }
-
-    .contact-main-picture {
-        margin-top: -15%;
-    }
-    .contact-second-picture {
-        margin-top: -35%;
-    }
-
-    .service-names {
-        font-size: 5.6rem;
-    }
-
-    .process-pricing-title {
-        font-size: 5.6rem;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 8.4%;
-      }
-
-    .portfolio-title-padding {
-        padding-bottom: 20.5%;
-      }
-
-    .portfolio-video-width {
-        max-width: 42.7rem;
-      }
 
       .accordion .dt a::after {
         top: 1.1rem;
@@ -1692,107 +1232,12 @@ nav {
 
 @media (min-width:720px) {
 
-    .hamburger-wrapper {
-        top: 11.3vw;
-      }
-
-    .services-main-picture {
-        margin-top: -30%;
-    }
-    .services-second-picture {
-        margin-top: -50%;
-    }
-
-    .portfolio-title {
-        font-size: 6rem;
-        line-height: 5.2rem;
-      }
-
       .accordion .dt a::after {
         top: 1.2rem;
-      }
-    
-}
-
-@media (min-width:740px) {
-    .responsive-header {
-        font-size: 6rem;
-    }
-    .responsive-header-services {
-        font-size: 5.8rem;
-    }
-
-    .padding-sm-service {
-        padding-bottom: 17%;
-    }
-
-    .portfolio-video-width {
-        max-width: 44.8rem;
       }
 }
 
 @media (min-width:768px) {
-
-    .hamburger-wrapper {
-        top: 6.3vw;
-      }
-
-    .subheading-responsive {
-        font-size: 2.4rem;
-    }
-
-    .index-main-picture {
-        margin-top: -40%;
-    }
-    .index-second-picture {
-        margin-top: -20%;
-    }
-
-    .services-third-picture {
-        margin-top: -70%;
-    }
-
-    .portfolio-main-picture {
-        margin-top: 0;
-    }
-    .portfolio-second-picture {
-        margin-top: -40%;
-    }
-    .portfolio-third-picture {
-        margin-top: -20%;
-    }
-
-
-    .pricing-main-picture {
-        margin-top: -40%;
-    }
-    .pricing-second-picture {
-        margin-top: 0;
-    }
-    .pricing-third-picture {
-        margin-top: -20%;
-    }
-
-
-    .about-main-picture {
-        margin-top: 10%;
-    }
-    .about-second-picture {
-        margin-top: 30%;
-    }
-    .about-third-picture {
-        margin-top: -10%;
-    }
-
-    .contact-main-picture {
-        margin-top: 0;
-    }
-    .contact-third-picture {
-        margin-top: -20%;
-    }
-    .contact-second-picture {
-        margin-top: -40%;
-    }
 
     .accordion .dt a::after {
         top: 1.2rem;
@@ -1806,217 +1251,34 @@ nav {
         height: 4.8rem;
     }
 
-
-    .responsive-header {
-        font-size: 6.5rem;
-    }
-
-    .responsive-header-services {
-        font-size: 6.3rem;
-    }
-
-    .index-main-picture {
-        margin-top: -40%;
-    }
-    .index-second-picture {
-        margin-top: -10%;
-    }
-    .index-third-picture {
-        margin-top: 20%;
-    }
-
-
-    .portfolio-main-picture {
-        margin-top: 30%;
-    }
-    .portfolio-second-picture {
-        margin-top: -30%;
-    }
-    .portfolio-third-picture {
-        margin-top: 0;
-    }
-
-    .about-main-picture {
-        margin-top: 35%;
-    }
-    .about-second-picture {
-        margin-top: 65%;
-    }
-    .about-third-picture {
-        margin-top: 5%;
-    }
-
-    .service-names {
-        font-size: 6.2rem;
-    }
-
-    .process-pricing-title {
-        font-size: 6.2rem;
-    }
-
-    .portfolio-title {
-        font-size: 6.6rem;
-        line-height: 5.7rem;
-      }
-
-    .portfolio-video-width {
-        max-width: 48.6rem;
-      }
-
-      .portfolio-title-padding-single {
-        padding-bottom: 8.1%;
-      }
-
-      .portfolio-title-padding {
-        padding-bottom: 19.5%;
-      }
-
       .accordion .dt a::after {
         top: 1.3rem;
         right: 2.3rem;
       }
-
-      .img-height {
-        min-height: 40vh;
-      }
-
 }
 
 @media (min-width:850px) {
-
-    .hamburger-wrapper {
-        top: 6.2vw;
-      }
-
-    .responsive-header {
-        font-size: 6.7rem;
-    }
-    .service-names {
-        font-size: 6.6rem;
-    }
-
-    .process-pricing-title {
-        font-size: 6.6rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 51.9rem;
-      }
-
     .accordion .dt a::after {
         top: 1.4rem;
         right: 2.5rem;
       }
-
 }
 
-@media (min-width: 892px) {
-    .hamburger-wrapper {
-        top: 6.2vw;
-      }
-
-    .portfolio-title {
-      font-size: 7.2rem;
-      line-height: 6.3rem;
-    }
-  }
-
 @media (min-width:900px) {
-
-    .hamburger-wrapper {
-        top: 6.1vw;
-      }
-
-    .responsive-header {
-        font-size: 7.1rem;
-    }
-    .service-names {
-        font-size: 7rem;
-    }
-
-    .process-pricing-title {
-        font-size: 7rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 55.1rem;
-      }
-    
-    .portfolio-title-padding {
-        padding-bottom: 20.9%;
-      }
-
       .accordion .dt a::after {
         top: 1.5rem;
         right: 2.8rem;
       }
-
 }
 
 @media (min-width: 945px) {
-    .portfolio-title {
-      font-size: 8rem;
-      line-height: 6.9rem;
-    }
-    .portfolio-video-width {
-        max-width: 57.7rem;
-      }
-    .portfolio-title-padding-single {
-        padding-bottom: 8.9%;
-      }
-    .portfolio-title-padding {
-        padding-bottom: 22%;
-      }
-
       .accordion .dt a::after {
         top: 1.7rem;
         right: 3rem;
       }
   }
 
-@media (min-width:950px) {
-    .responsive-header {
-        font-size: 7.5rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 58.2rem;
-      }
-    
-      .portfolio-title-padding {
-        padding-bottom: 21.8%;
-      }
-}
-
 @media (min-width:1000px) {
-
-    .hamburger-wrapper {
-        top: 6vw;
-      }
-
-    .responsive-header {
-        font-size: 7.9rem;
-    }
-
-    .subheading-responsive {
-        font-size: 2.7rem;
-    }
-
-    .service-names {
-        font-size: 7.5rem;
-    }
-
-    .process-pricing-title {
-        font-size: 7.5rem;
-    }
-
-    .portfolio-video-width {
-        max-width: 60.8rem;
-      }
-
-      .portfolio-title-padding {
-        padding-bottom: 21%;
-      }
 
       .accordion .dt a::after {
         top: 1.8rem;
@@ -2025,62 +1287,14 @@ nav {
 }
 
 @media (min-width:1070px) {
-    .padding-sm-service {
-        padding-bottom: 16%;
-    }
 
-    .portfolio-video-width {
-        max-width: 65.1rem;
-      }
-
-      .portfolio-title {
-        font-size: 8.5rem;
-        line-height: 7.3rem;
-      }
-
-      .accordion .dt a::after {
+    .accordion .dt a::after {
         top: 1.7rem;
         right: 3rem;
-      }
-
-
-}
-
-@media (min-width:1100px) {
-
-    .hamburger-wrapper {
-        top: 5.9vw;
-      }
-
-    .responsive-header {
-        font-size: 8.7rem;
     }
-    .service-names {
-        font-size: 8.5rem;
-    }
-    .padding-sm-service {
-        padding-bottom: 17%;
-    }
-
-    .process-pricing-title {
-        font-size: 8.5rem;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 8.4%;
-      }
-
-      .portfolio-title-padding {
-        padding-bottom: 20.1%;
-      }
-
 }
 
 @media (min-width: 1148px) {
-    .portfolio-title {
-      font-size: 9.5rem;
-      line-height: 8.1rem;
-    }
 
     .accordion .dt a::after {
         top: 1.8rem;
@@ -2088,156 +1302,16 @@ nav {
       }
   }
 
-@media (min-width:1200px) {
-
-    .hamburger-wrapper {
-        top: 5.8vw;
-      }
-
-    .responsive-header {
-        font-size: 9.6rem;
-    }
-
-    .responsive-header-services {
-        font-size: 9.4rem;
-    }
-
-    .padding-website-service {
-        padding-bottom: 13%;
-    }
-
-    .padding-sm-service {
-        padding-bottom: 16%;
-    }
-}
-
 @media (min-width:1280px) {
   
-    .services-main-picture {
-        margin-top: 45%;
-    }
-    .services-second-picture {
-        margin-top: 15%;
-    }
-    .services-third-picture {
-        margin-top: -15%;
-    }
-
-    .contact-main-picture {
-        margin-top: 0;
-    }
-    .contact-third-picture {
-        margin-top: -32%;
-    }
-    .contact-second-picture {
-        margin-top: -62%;
-    }
-
-    .padding-sm-service {
-        padding-bottom: 15%;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 7.8%;
-      }
-
-      .portfolio-title-padding {
-        padding-bottom: 19%;
-      }
-
       .accordion .dt a::after {
         top: 2.1rem;
         right: 3rem;
       }
-
-      .img-height {
-        min-height: 34vh;
-      }
-
-}
-
-@media (min-width: 1283px) {
-    .portfolio-title {
-      font-size: 8.9rem;
-      line-height: 8.1rem;
-    }
-
-    .portfolio-title-padding {
-        padding-bottom: 7.8%;
-      }
-  }
-
-@media (min-width:1300px) {
-    .responsive-header {
-        font-size: 10.4rem;
-    }
-
-    .responsive-header-services {
-        font-size: 10.2rem;
-    }
-
-}
-
-@media (min-width:1350px) {
-    .hamburger-wrapper {
-        top: 5.7vw;
-      }
-
-    .padding-sm-service {
-        padding-bottom: 15%;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 7.5%;
-      }
-
-    .portfolio-title-padding {
-        padding-bottom: 7.5%;
-      }
-}
-
-@media (min-width:1400px) {
-    .hamburger-wrapper {
-        top: 5.7vw;
-      }
-
-    .responsive-header {
-        font-size: 11rem;
-    }
-    .service-names {
-        font-size: 9rem;
-    }
-
-    .process-pricing-title {
-        font-size: 9rem;
-    }
 }
 
 @media (min-width:1500px) {
-    .responsive-header {
-        font-size: 12rem;
-    }
-
-    .responsive-header-services {
-        font-size: 11.8rem;
-    }
-
-    .service-names {
-        font-size: 10.5rem;
-    }
-
-    .process-pricing-title {
-        font-size: 10.5rem;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 7%;
-      }
-
-      .portfolio-title-padding {
-        padding-bottom: 7%;
-      }
-
+ 
       .accordion .dt a::after {
         top: 2.3rem;
         right: 3.4rem;
@@ -2245,28 +1319,6 @@ nav {
 }
 
 @media (min-width:1600px) {
-    .hamburger-wrapper {
-        top: 5.6vw;
-      }
-
-    .responsive-header {
-        font-size: 12.6rem;
-    }
-    .service-names {
-        font-size: 11.2rem;
-    }
-
-    .process-pricing-title {
-        font-size: 11.8rem;
-    }
-
-    .portfolio-title-padding-single {
-        padding-bottom: 6.4%;
-      }
-
-      .portfolio-title-padding {
-        padding-bottom: 6.4%;
-      }
 
       .accordion .dt a::after {
         top: 2.5rem;
@@ -2274,9 +1326,6 @@ nav {
       }
 }
 
-.accordion-drop {
-    transition: transform 0.3s ease-in-out;
-}
 
 .subtle {
     opacity: .5;
@@ -2330,7 +1379,7 @@ nav {
 
 .cta:hover,
 .header-cta:hover {
-    background-color: #47544a;
+    background-color: #697d6f;
     color: #EEE0CB;
     transform: scale(1.05);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -2358,33 +1407,6 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cta-timel {
-    padding: 0.5rem 2rem;
-    background-color: #EEE0CB;
-    color: #001410;
-    text-transform: uppercase;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-}
-
-.cta-timel:hover {
-    background-color: #001410;
-    color: #EEE0CB;
-    transform: scale(1.05);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-.bg-banner-light {
-    background-color: rgb(245,245,245);
-    opacity: 0.8;
-}
-
 
 /*  Font Awesome Icons */
 .fa-regular,
@@ -2396,124 +1418,6 @@ nav {
 .overlay {
     background-color: rgba(0,0,0,0.7);
   }
-
-
-/* Calculator */
-
-.calculator {
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 4px;
-  }
-
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-  
-input {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    background-color:#ECE8D5;
-    color: black;
-  }
-
-button {
-    background-color: #003f31;
-    color: #ECE8D5;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-
-/* Remove the spinners from number input fields */
-input[type="number"] {
-    -moz-appearance: textfield; /* Firefox */
-  }
-  
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  .calculator {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background: linear-gradient(135deg, #004838, #002e24);
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.calculator input[type="text"],
-.calculator input[type="number"],
-.calculator input[type="percentage"] {
-    background-color: #fbf7f1;
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    color: #001410;
-}
-
-.calculator label {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #f5ecdd;
-}
-
-#calculateBtn {
-    background-color: #9b111b;
-    color: #f5ecdd;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-#calculateBtn:hover {
-    background-color: #e74c3c;
-    transform: translateY(-2px);
-}
-
-#calculateBtn:active {
-    transform: translateY(2px);
-    background-color: #ff5733;
-}
-
-.results {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
-    padding: 20px;
-    color: #001410;
-}
-
-.results span {
-    color: #e01927;
-    font-weight: bold;
-}
-
-*, ::before, ::after {
-    outline-color: #e01927;
-}
-
-@media (min-width: 640px) {
-    .calculator {
-        flex-direction: row;
-    }
-}
-
 
 
 /* Accordion */
@@ -2586,7 +1490,6 @@ input[type="number"] {
     background-color: #004838; 
     transform: scale(1.1); 
 }
-
 
 
 .mobile-menu nav {
