@@ -43,7 +43,7 @@ project:
    url: https://dejamaresort.com/
  - name: AJ Hackett International
    is_testimonial: true
-   logo: 
+   logo: /images/logo-white-aj-hackett-international.png
    option: 
    image: /images/aj-hackett-international-website-design-developoment-refined-island-creations-bali.png
    image-position: 50% 50%
@@ -97,20 +97,23 @@ project:
                 alt="{{ site.image-alt }}" />
             </div>
           </a>
-          <a href="{{ site.url }}" class="text-right flex items-center justify-end pt-2p pb-5p">
+          <a href="{{ site.url }}" class="text-right flex items-center justify-end pt-2p" target="_blank" rel="noopener noreferrer">
             <span>Visit the website</span> 
             <i class="fa-solid fa-chevron-right ml-2"></i>
-          </a>
+          </a>          
         </div>
         <div class="col-span-3 md:pl-5p">
-          <div class="flex items-center mb-5p">
-            <p class="text-2xl sm:text-4xl flex-1">
+          <div class="sm:flex sm:items-center mb-2p md:mb-5p">
+            <p class="text-2xl sm:text-4xl hidden sm:block flex-1">
               {{ site.name }}
             </p>
             {% if site.is_testimonial %}
               <!-- Display the logo next to the name for testimonial sites -->
-              <img src="{{ site.logo }}" alt="{{ site.name }} logo" class="h-20 ml-3 object-contain"/>
+              <img src="{{ site.logo }}" alt="{{ site.name }} logo" class="h-20 sm:ml-3 object-contain"/>
             {% endif %}
+            <p class="text-2xl sm:text-4xl flex-1 sm:hidden">
+              {{ site.name }}
+            </p>
           </div>
           <p> 
             {% if site.is_testimonial %}

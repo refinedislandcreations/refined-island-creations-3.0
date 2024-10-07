@@ -502,9 +502,6 @@ video {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.ml-3 {
-  margin-left: 0.75rem;
-}
 .ml-5p {
   margin-left: 5%;
 }
@@ -2664,6 +2661,9 @@ input[type="number"] {
   .sm\:mb-5p {
     margin-bottom: 5%;
   }
+  .sm\:ml-3 {
+    margin-left: 0.75rem;
+  }
   .sm\:ml-auto {
     margin-left: auto;
   }
@@ -2672,6 +2672,9 @@ input[type="number"] {
   }
   .sm\:block {
     display: block;
+  }
+  .sm\:flex {
+    display: flex;
   }
   .sm\:grid {
     display: grid;
@@ -2690,6 +2693,9 @@ input[type="number"] {
   }
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .sm\:items-center {
+    align-items: center;
   }
   .sm\:justify-end {
     justify-content: flex-end;
@@ -2753,11 +2759,11 @@ input[type="number"] {
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .md\:mb-5p {
+    margin-bottom: 5%;
+  }
   .md\:block {
     display: block;
-  }
-  .md\:flex {
-    display: flex;
   }
   .md\:grid {
     display: grid;
