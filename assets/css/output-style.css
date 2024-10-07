@@ -455,9 +455,6 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.z-10 {
-  z-index: 10;
-}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -547,9 +544,6 @@ video {
 .min-h-40 {
   min-height: 40vh;
 }
-.min-h-50 {
-  min-height: 50vh;
-}
 .w-32 {
   width: 8rem;
 }
@@ -585,9 +579,6 @@ video {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -712,10 +703,6 @@ video {
   padding-top: 15%;
   padding-bottom: 15%;
 }
-.py-3p {
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -751,9 +738,6 @@ video {
 }
 .pl-\[2\%\] {
   padding-left: 2%;
-}
-.pt-10p {
-  padding-top: 10%;
 }
 .pt-15p {
   padding-top: 15%;
@@ -2667,8 +2651,8 @@ input[type="number"] {
   .sm\:ml-auto {
     margin-left: auto;
   }
-  .sm\:mt-1\/2 {
-    margin-top: 50%;
+  .sm\:mt-40p {
+    margin-top: 40%;
   }
   .sm\:block {
     display: block;
@@ -2688,9 +2672,6 @@ input[type="number"] {
   .sm\:w-48 {
     width: 12rem;
   }
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -2702,9 +2683,6 @@ input[type="number"] {
   }
   .sm\:gap-4 {
     gap: 1rem;
-  }
-  .sm\:gap-5 {
-    gap: 1.25rem;
   }
   .sm\:px-10p {
     padding-left: 10%;
@@ -2729,14 +2707,8 @@ input[type="number"] {
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
-  .sm\:pb-\[25\%\] {
-    padding-bottom: 25%;
-  }
   .sm\:pt-10p {
     padding-top: 10%;
-  }
-  .sm\:pt-5p {
-    padding-top: 5%;
   }
   .sm\:text-2xl {
     font-size: 1.5rem;
@@ -2771,9 +2743,6 @@ input[type="number"] {
   .md\:hidden {
     display: none;
   }
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -2794,17 +2763,8 @@ input[type="number"] {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-  .md\:pb-10p {
-    padding-bottom: 10%;
-  }
-  .md\:pb-20p {
-    padding-bottom: 20%;
-  }
   .md\:pl-5p {
     padding-left: 5%;
-  }
-  .md\:pt-10p {
-    padding-top: 10%;
   }
 }
 
@@ -2812,6 +2772,9 @@ input[type="number"] {
   .lg\:mx-10p {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .lg\:mt-30p {
+    margin-top: 30%;
   }
   .lg\:block {
     display: block;
@@ -2862,20 +2825,13 @@ input[type="number"] {
   .xl\:mb-3p {
     margin-bottom: 3%;
   }
-  .xl\:p-3p {
-    padding: 3%;
-  }
-  .xl\:py-3p {
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
-  .xl\:pb-5p {
-    padding-bottom: 5%;
+  .xl\:mt-20p {
+    margin-top: 20%;
   }
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:pt-5p {
-    padding-top: 5%;
+  .\32xl\:mt-15p {
+    margin-top: 15%;
   }
 }
