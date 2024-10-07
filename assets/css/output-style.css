@@ -881,6 +881,10 @@ svg {
     background-color: #697d6f;
 }
 
+.bg-offers {
+    background-color: #526156;
+}
+
 .bg-lightgreen {
     background-color: #839788; 
 }
@@ -1056,10 +1060,14 @@ svg {
 .hamburger-wrapper {
     cursor: pointer;
     display: inline-block;
-    right: 15%;
-    top: calc(11vw + 0rem);
     z-index: 1000;
-    position: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hamburger-menu {
