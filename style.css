@@ -644,7 +644,7 @@ footer nav a {
 }
 
 .my-float{
-	margin-top:16px;
+	margin-top:12px;
 }
 
 /* Hover effect */
@@ -654,13 +654,13 @@ footer nav a {
 }
 
 .float-contact{
-	width:60px;
-	height:60px;
+	width:50px;
+	height:50px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-    font-size:30px;
+    font-size:25px;
 	box-shadow: 2px 2px 3px #737373;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background and transform */
 }
