@@ -18,30 +18,46 @@
                     </div>
             
                     <div class="mobile-menu">
-                        <nav>
-                            <a href="/index.html" class="w-32 sm:w-48" aria-label="Home Page">
-                                {% include refined-island-creations-logo-straight.html %}
-                            </a>
-                            <a href="/services.html" aria-label="Our Services"> Our Packages </a>
-                            <div class="submenu">
-                                <a href="/the-express-edition.html" aria-label="Option 1">Express Edition</a>
-                                <a href="/the-curated-blend.html" aria-label="Option 2">Curated Blend</a>
-                                <a href="/the-tailored-masterpiece.html" aria-label="Option 3">Tailored Creation</a>
+                        <div class="md:grid md:grid-cols-6 md:gap-5 p-5p pt-15p sm:pt-10p md:pt-5p">
+
+                            <!-- Column 1: Logo and Call to Action -->
+                            <div class="md:col-span-full lg:col-span-2 flex flex-col items-center justify-center py-10p">
+                                <a href="/index.html" class="inline-block w-40">
+                                    {% include refined-island-creations-logo-leaf.html %}
+                                </a>
+                                <div class="mt-4">
+                                    <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="header-cta"> Book A Call Today </a>
+                                </div>
                             </div>
-                            <a href="/portfolio.html" aria-label="View Portfolio and Testimonials"> Portfolio & Testimonials </a>
-                            <a href="/contact.html" aria-label="Contact Us"> Contact Us </a>
-                            <div class="social-links">
-                                <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="icon-link" aria-label="Schedule a Consultation Call">
-                                    <i class="fa-solid fa-calendar"></i>
-                                </a>
-                                <a href="https://wa.me/your-phonenumber" target="_blank" class="icon-link" aria-label="Send us a WhatsApp message">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </a>
-                                <a href="https://www.instagram.com/refinedislandcreations/" target="_blank" class="icon-link" aria-label="Follow us on Instagram">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                    
+                            <!-- Column 2: Our Packages (adjusted with margin-top for md screens) -->
+                            <div class="md:col-span-3 lg:col-span-2 text-center md:text-left py-5p sm:py-0 md:mx-10p" style="margin-top: 3rem;"> 
+                                <h4 class="font-semibold text-lightgreen"> Our Packages </h4>
+                                <nav>
+                                    <a href="/the-express-edition.html" class="block" style="display: block; margin-bottom: 8px;"> Express Edition </a>
+                                    <a href="/the-curated-blend.html" class="block" style="display: block; margin-bottom: 8px;"> Curated Blend </a>
+                                    <a href="/the-tailored-masterpiece.html" class="block" style="display: block;"> Tailored Creation </a>
+                                </nav>
                             </div>
-                        </nav>
+                    
+                            <!-- Column 3: Portfolio, Contact, and Social Links (adjusted with margin-top for md screens) -->
+                            <div class="md:col-span-3 lg:col-span-2 text-center md:text-left py-10p md:py-0" style="margin-top: 3rem;">
+                                <h4 class="font-semibold text-lightgreen"> Find Out More </h4>
+                                <nav>
+                                    <a href="/portfolio.html" class="block" style="display: block; margin-bottom: 8px;"> Portfolio & Testimonials </a>
+                                    <a href="/contact.html" class="block" style="display: block; margin-bottom: 8px;"> Contact Us </a>
+                                    <div class="social-links flex justify-center md:justify-start mt-4">
+                                        <a href="https://wa.me/your-phonenumber" target="_blank" class="icon-link pr-5%" aria-label="Send us a WhatsApp message">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/refinedislandcreations/" target="_blank" class="icon-link" aria-label="Follow us on Instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                    
+                        </div>
                     </div>
                     
                 </nav>

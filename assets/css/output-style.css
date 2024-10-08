@@ -502,6 +502,9 @@ video {
 .mt-2\/3 {
   margin-top: 75%;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .mt-5p {
   margin-top: 5%;
 }
@@ -722,6 +725,9 @@ video {
 }
 .pl-\[2\%\] {
   padding-left: 2%;
+}
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .pt-15p {
   padding-top: 15%;
@@ -1040,9 +1046,31 @@ nav {
     color: inherit; 
     display: block;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+/* Ensure the mobile menu links are stacked vertically */
+.mobile-menu nav {
+    display: block; /* Stack links vertically */
+}
+
+/* Style individual links inside the mobile menu */
+.mobile-menu nav a {
+    display: block; /* Make sure each link is a block element */
+    margin-bottom: 10px; /* Add spacing between links if needed */
+}
+
+
+
+/* Footer nav should have vertical alignment */
+footer nav {
+    display: block; /* Ensure links are stacked */
+}
+
+/* Optional: Add some margin or padding to the links if needed */
+footer nav a {
+    margin-bottom: 10px; /* Adjust as needed for spacing */
+}
 
 
 
@@ -1322,7 +1350,7 @@ nav {
 }
 
 .header-cta {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.1rem;
     background-color: #839788;
     color: #001410;
     text-transform: uppercase;
@@ -1470,11 +1498,6 @@ nav {
 }
 
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
 
 .icon-link {
     display: inline-flex;
@@ -1615,6 +1638,16 @@ nav {
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .md\:col-span-full {
+    grid-column: 1 / -1;
+  }
+  .md\:mx-10p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   .md\:mb-5p {
     margin-bottom: 5%;
   }
@@ -1627,11 +1660,20 @@ nav {
   .md\:hidden {
     display: none;
   }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .md\:items-start {
+    align-items: flex-start;
+  }
+  .md\:justify-start {
+    justify-content: flex-start;
   }
   .md\:gap-4 {
     gap: 1rem;
@@ -1643,6 +1685,10 @@ nav {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .md\:py-5p {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -1650,9 +1696,18 @@ nav {
   .md\:pl-5p {
     padding-left: 5%;
   }
+  .md\:pt-5p {
+    padding-top: 5%;
+  }
+  .md\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .lg\:mx-10p {
     margin-left: 10%;
     margin-right: 10%;

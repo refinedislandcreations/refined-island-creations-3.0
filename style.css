@@ -232,9 +232,31 @@ nav {
     color: inherit; 
     display: block;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+/* Ensure the mobile menu links are stacked vertically */
+.mobile-menu nav {
+    display: block; /* Stack links vertically */
+}
+
+/* Style individual links inside the mobile menu */
+.mobile-menu nav a {
+    display: block; /* Make sure each link is a block element */
+    margin-bottom: 10px; /* Add spacing between links if needed */
+}
+
+
+
+/* Footer nav should have vertical alignment */
+footer nav {
+    display: block; /* Ensure links are stacked */
+}
+
+/* Optional: Add some margin or padding to the links if needed */
+footer nav a {
+    margin-bottom: 10px; /* Adjust as needed for spacing */
+}
 
 
 
@@ -512,7 +534,7 @@ nav {
 }
 
 .header-cta {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.1rem;
     background-color: #839788;
     color: #001410;
     text-transform: uppercase;
@@ -654,11 +676,6 @@ nav {
 }
 
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
 
 .icon-link {
     display: inline-flex;
