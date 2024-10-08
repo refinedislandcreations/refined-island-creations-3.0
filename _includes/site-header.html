@@ -2,12 +2,10 @@
     <section> 
         {% for item in page.header %}
         <div class="bg-cover bg-center bg-no-repeat relative" style="background-image: linear-gradient(to right, rgba(21, 19, 18, 0.99), rgba(66, 53, 47, 0)), url('{{ item.image }}'); background-position: {{ item.position }}; height: 100vh !important;">
-
             <div class="px-5p py-10p md:py-5p flex justify-between items-center ">
                 <a href="/index.html" class="w-32 sm:w-48">
                     {% include refined-island-creations-logo-straight.html %}
                 </a>
-            
                 <nav class="flex justify-end items-center flex-wrap font-syne font-normal">
                     <div class="hamburger-wrapper">
                         <div class="hamburger-menu">
@@ -16,10 +14,8 @@
                             <span></span>
                         </div>
                     </div>
-            
                     <div class="mobile-menu">
                         <div class="md:grid md:grid-cols-6 md:gap-5 p-5p pt-15p sm:pt-10p md:pt-5p">
-
                             <!-- Column 1: Logo and Call to Action -->
                             <div class="md:col-span-full lg:col-span-2 flex flex-col items-center justify-center py-10p">
                                 <a href="/index.html" class="inline-block w-40">
@@ -29,17 +25,15 @@
                                     <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="header-cta"> Book A Call Today </a>
                                 </div>
                             </div>
-                    
                             <!-- Column 2: Our Packages (adjusted with margin-top for md screens) -->
                             <div class="md:col-span-3 lg:col-span-2 text-center md:text-left py-5p sm:py-0 md:mx-10p" style="margin-top: 3rem;"> 
-                                <h4 class="font-semibold text-lightgreen"> Our Packages </h4>
+                                <h4 class="font-semibold text-lightgreen"> Signature Services </h4>
                                 <nav>
                                     <a href="/the-express-edition.html" class="block" style="display: block; margin-bottom: 8px;"> Express Edition </a>
                                     <a href="/the-curated-blend.html" class="block" style="display: block; margin-bottom: 8px;"> Curated Blend </a>
-                                    <a href="/the-tailored-masterpiece.html" class="block" style="display: block;"> Tailored Creation </a>
+                                    <a href="/the-tailored-masterpiece.html" class="block" style="display: block;"> Tailored Masterpiece </a>
                                 </nav>
                             </div>
-                    
                             <!-- Column 3: Portfolio, Contact, and Social Links (adjusted with margin-top for md screens) -->
                             <div class="md:col-span-3 lg:col-span-2 text-center md:text-left py-10p md:py-0" style="margin-top: 3rem;">
                                 <h4 class="font-semibold text-lightgreen"> Find Out More </h4>
@@ -58,11 +52,9 @@
                             </div>
                     
                         </div>
-                    </div>
-                    
+                    </div> 
                 </nav>
             </div>
-
             <div class="flex flex-col h-full">
                 <div class="relative">
                     <div class="px-5p mt-2/3 sm:mt-40p lg:mt-30p xl:mt-20p 2xl:mt-15p">
@@ -73,7 +65,5 @@
             </div>
         </div>
         {% endfor %}
-
-        
     </section>
 </header>
