@@ -515,9 +515,8 @@ footer nav a {
 
 
 .subtle {
-    opacity: .5;
+    opacity: .7;
     font-size: 0.8rem;
-    line-height: 1.2rem;
 }
 
 .button {

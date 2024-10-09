@@ -717,6 +717,9 @@ video {
 .pb-2p {
   padding-bottom: 2%;
 }
+.pb-4p {
+  padding-bottom: 4%;
+}
 .pb-5p {
   padding-bottom: 5%;
 }
@@ -738,14 +741,23 @@ video {
 .pt-15p {
   padding-top: 15%;
 }
+.pt-2 {
+  padding-top: 0.5rem;
+}
 .pt-2p {
   padding-top: 2%;
+}
+.pt-4p {
+  padding-top: 4%;
 }
 .pt-5p {
   padding-top: 5%;
 }
 .pt-\[2\%\] {
   padding-top: 2%;
+}
+.pt-10p {
+  padding-top: 10%;
 }
 .text-left {
   text-align: left;
@@ -1338,9 +1350,8 @@ footer nav a {
 
 
 .subtle {
-    opacity: .5;
+    opacity: .7;
     font-size: 0.8rem;
-    line-height: 1.2rem;
 }
 
 .button {
@@ -1588,6 +1599,9 @@ footer nav a {
   .sm\:w-48 {
     width: 12rem;
   }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -1623,8 +1637,17 @@ footer nav a {
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
+  .sm\:pr-5p {
+    padding-right: 5%;
+  }
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
   .sm\:pt-10p {
     padding-top: 10%;
+  }
+  .sm\:text-left {
+    text-align: left;
   }
   .sm\:text-2xl {
     font-size: 1.5rem;
@@ -1715,8 +1738,8 @@ footer nav a {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .lg\:mt-30p {
-    margin-top: 30%;
+  .lg\:mt-20p {
+    margin-top: 20%;
   }
   .lg\:block {
     display: block;
@@ -1763,9 +1786,6 @@ footer nav a {
 @media (min-width: 1280px) {
   .xl\:mb-3p {
     margin-bottom: 3%;
-  }
-  .xl\:mt-20p {
-    margin-top: 20%;
   }
 }
 
