@@ -3,7 +3,7 @@
         {% for item in page.header %}
         <div class="bg-cover bg-center bg-no-repeat relative" style="background-image: linear-gradient(to right, rgba(21, 19, 18, 0.99), rgba(66, 53, 47, 0)), url('{{ item.image }}'); background-position: {{ item.position }}; height: 100vh !important;">
             <div class="px-5p py-10p md:py-5p flex justify-between items-center ">
-                <a href="/index.html" class="w-32 sm:w-48">
+                <a href="/index.html" class="w-72">
                     {% include refined-island-creations-logo-straight.html %}
                 </a>
                 <nav class="flex justify-end items-center flex-wrap font-syne font-normal">
@@ -58,8 +58,8 @@
             <div class="flex flex-col h-full">
                 <div class="relative">
                     <div class="px-5p mt-2/3 sm:mt-40p lg:mt-20p 2xl:mt-15p">
-                        <p class="font-serif uppercase text-lightgreen text-3xl sm:text-7xl pb-5p">{{ item.title }}</p>
-                        <h1 class="text-lg sm:text-2xl">{{ item.text }}</h1>
+                        <p class="font-serif uppercase text-lightgreen header-title-size sm:text-7xl pb-5p">{{ item.title }}</p>
+                        <h1 class="header-subtitle-size text-lg sm:text-2xl sm:pr-20p">{{ item.text }}</h1>
                     </div>
                 </div>
             </div>
