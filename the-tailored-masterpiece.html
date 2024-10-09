@@ -33,7 +33,8 @@ slider:
 ---
 
 <!---------Starting at------------->
-<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p sm:px-10p py-10p">
     <div class="lg:grid lg:grid-cols-6 lg:gap-4">
       <div class="col-span-2">
         <p class="mid-title pb-2">Starting at $2,500</p>
@@ -45,41 +46,47 @@ slider:
         <p>Starting with a blank canvas, we work closely with you to understand your brand's identity and vision. Through collaborative mood boards and detailed wireframes, we ensure that every element of your website is carefully designed to reflect your business’s essence and captivate your target audience. The result is a fully customized website that aligns with your specific goals and stands out in the competitive digital landscape.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 <!---------Examples------------->
-<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-5p">
-  <div class="lg:grid lg:grid-cols-6 lg:gap-4">
-    <div class="col-span-2">
-      <p class="mid-title pb-2p">Tailored Masterpiece in Action</p>
-    </div>
-    <div class="col-span-4">    </div>
-    <div class="col-span-2">    </div>
-    <div class="col-span-4 text-border-top sm:px-5p" data-aos="fade-down">
-      <p class="mt-5p mb-2p">Our most sophisticated package has resulted in stunning, fully customized websites that reflect the unique character of each client. Below are a few standout examples of businesses that have chosen the Tailored Masterpiece, benefiting from the bespoke design and functionality that makes their online presence truly exceptional.</p>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p sm:px-10p py-5p">
+    <div class="lg:grid lg:grid-cols-6 lg:gap-4">
+      <div class="col-span-2">
+        <p class="mid-title pb-2p">Tailored Masterpiece in Action</p>
+      </div>
+      <div class="col-span-4">    </div>
+      <div class="col-span-2">    </div>
+      <div class="col-span-4 text-border-top sm:px-5p" data-aos="fade-down">
+        <p class="mt-5p mb-2p">Our most sophisticated package has resulted in stunning, fully customized websites that reflect the unique character of each client. Below are a few standout examples of businesses that have chosen the Tailored Masterpiece, benefiting from the bespoke design and functionality that makes their online presence truly exceptional.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="max-w-screen-2xl mx-auto pl-10p"></section>
-  <div class="overflow-x-auto whitespace-nowrap py-4">
-      <div class="flex items-start">
-          {% for item in page.slider %}
-              <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group">
-                  <img class="w-full h-80 object-cover" src="{{ item.image }}" alt="{{ item.title }}" />
-                  <div class="absolute inset-x-0 bottom-0 bg-[#adbab070] text-dark bg-opacity-75 p-3 flex items-center justify-between">
-                      <span class="text-lg font-semibold">{{ item.title }}</span>
-                  </div>
-              </a>
-          {% endfor %}
-      </div>
+<section class="max-w-screen-2xl mx-auto">
+  <div class="pl-10p">
+    <div class="overflow-x-auto whitespace-nowrap py-4">
+        <div class="flex items-start">
+            {% for item in page.slider %}
+                <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group">
+                    <img class="w-full h-80 object-cover" src="{{ item.image }}" alt="{{ item.title }}" />
+                    <div class="absolute inset-x-0 bottom-0 bg-[#adbab070] text-dark bg-opacity-75 p-3 flex items-center justify-between">
+                        <span class="text-lg font-semibold">{{ item.title }}</span>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
   </div>
 </section>
 
 
 <!---------Who this is for------------->
-<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p sm:px-10p py-10p">
     <div class="lg:grid lg:grid-cols-6 lg:gap-4">
       <div class="col-span-2">
         <p class="mid-title pb-2p">Who This Is For</p>
@@ -95,7 +102,8 @@ slider:
         </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 
@@ -118,7 +126,8 @@ slider:
 
   <!---------Ready to Get Started?------------->
 
-<section class="max-w-screen-2xl mx-auto px-5p sm:px-10p py-10p">
+<section class="max-w-screen-2xl mx-auto">
+  <div class="px-5p sm:px-10p py-10p">
     <div class="lg:grid lg:grid-cols-6 lg:gap-4">
       <div class="col-span-2">
         <p class="mid-title pb-2p">Ready to Get Started?</p>
@@ -133,4 +142,5 @@ slider:
       </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
