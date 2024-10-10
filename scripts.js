@@ -7,9 +7,11 @@ $(document).ready(function() {
 
 
 
-var allPanels = $('.accordion > .dd').hide();
 
-	$('.accordion > .dt > a').click(function() {
+console.log (document.querySelector('.dd'))
+$('.accordion .dd').hide();
+
+	$('.accordion .dt a').click(function() {
 		// allPanels.slideUp();
 
         
@@ -23,6 +25,9 @@ var allPanels = $('.accordion > .dd').hide();
 
    return false; 
 	});
+
+
+
 
 
 
@@ -66,8 +71,35 @@ lightGallery(document.getElementById('lightgallery'), {
      download: false    
 });
 
+lightGallery(document.getElementById('lg-1'), {
+  speed: 500,
+  getCaptionFromTitleOrAlt: false,
+   download: false    
+});
+
 lightGallery(document.getElementById('lg-2'), {
   speed: 500,
   getCaptionFromTitleOrAlt: false,
    download: false    
 });
+
+lightGallery(document.getElementById('lg-3'), {
+  speed: 500,
+  getCaptionFromTitleOrAlt: false,
+   download: false    
+});
+
+
+//type
+
+if (document.querySelector('#typed-location')) {
+
+
+var typed = new Typed('#typed-location', {
+  stringsElement: '#typed-strings',
+  typeSpeed: 100,
+  backSpeed: 50,
+  smartBackspace: true,
+});
+
+}

@@ -172,6 +172,7 @@ svg {
     cursor: pointer;
     display: inline-block;
     z-index: 1000;
+    position: fixed;
 }
 
 nav {
@@ -286,7 +287,6 @@ footer nav a {
 .live-site-button:hover {
     background-color: #839689; /* Darker shade on hover */
 }
-
 
 
 .subtle {
