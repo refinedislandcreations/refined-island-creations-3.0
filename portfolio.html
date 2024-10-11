@@ -19,71 +19,78 @@ seo:
   hide-from-google: true
 header:
  - image: /images/portfolio-image-website-design-development-refined-island-creations-bali.png
-   position: 
-   label: 
+   position: 50% 50%
+   label: Header banner showcasing individual plant leaves on a soft, blurred background.
    title: Our Work <br> & Client Success Stories
    text: Explore our projects and hear directly from our clients about their experiences.
 project:
  - name: Pondok Santi Estate
+   id: pondok
    is_testimonial: true
    logo: /images/pondok-santi-estate-logo-side.png
    option: 
    image: /images/pondok-santi-estate-refined-island-creations-web-design-development.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Laptop, phone, and tablet showcasing the Pondok Santi Estate website design.
    about: "The team at Refined Island Creations has simply been amazing. They managed to pull this project off in a timely and efficient manner. It's been an absolute pleasure to work with them; their communication and support throughout were outstanding. The website itself is everything we wanted and more. We, here at Pondok Santi Estate, are grateful to finally have a custom-designed and custom-built website, as it is so much safer than our previous WordPress site. We took a chance to work with such a new brand, but it definitely paid off; I can't recommend it highly enough."
    author: Dean Hackett, Director of Pondok Santi Estate
    url: https://pondoksanti.com/
  - name: Dejama Glamping Resort
+   id: dejama
    is_testimonial: true
    logo: /images/dejama-logo.png
    option: 
    image: /images/dejama-resort-refined-island-creations-web-design-development.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Laptop, phone, and tablet featuring the Dejama Glamping Resort Lombok website design.
    about: "We’re so happy with our decision to have Refined Island Creations design and build our website. From the moment we introduced Julia and her team to Dejama Glamping Resort, they developed a stunning design uniquely tailored to us. Their approachable and detailed process made each step easy to understand, which was very valuable for us as this was our first time getting a website made. The end result is beautiful, functional, and perfectly reflects our glamping resort. If you’re looking for a creative partner who communicates clearly and delivers on every promise, Julia and her team are the perfect choice."
    author: Caroline Mary, Owner of Dejama Glamping Resort Lombok
    url: https://dejamaresort.com/
  - name: AJ Hackett International
+   id: aj
    is_testimonial: true
    logo: /images/logo-white-aj-hackett-international.png
    option: 
    image: /images/aj-hackett-international-website-design-developoment-refined-island-creations-bali.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Laptop and tablet showcasing the AJ Hackett International website design.
    about: "Refined Island Creations recently completed two website development projects for our organisation and we are extremely pleased with the results. Throughout the entire process, we were kept well informed and the process was explained clearly and transparently at every stage. Their proactive approach to addressing potential challenges and offering solutions was invaluable to ensure we met our strict timeline. We highly recommend Juli and Refined Island Creations as their technical expertise, combined with their excellent communication and collaborative approach, makes them a true asset."
    author: Danny Hughes, CEO of AJ Hackett International
    url: https://ajhackett.com/
  - name: Hikari Hideaway
+   id: hikari
    is_testimonial: false
    option: 
    image: images/hikari-hideaway-refined-island-creations-web-design-development.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Laptop and phone displaying the Hikari Hideaway website design.
    about: Hikari Hideaway is a testament to our passion for creating exceptional digital experiences. This site showcases our commitment to elegance and tranquility with a minimalist design that perfectly mirrors the serene atmosphere of the hideaway. The refined color palette and fluid navigation ensure a seamless and immersive experience for visitors. Each detail, from high-quality imagery to user-centric layout, reflects our dedication to capturing the essence of luxury and relaxation. As one of our passion projects, Hikari Hideaway exemplifies the craftsmanship and creativity that drive our work.
    url: https://hikari.refinedislandcreations.com/
  - name: The Beauty Salon
+   id: beauty
    is_testimonial: false
    option: 
    image: images/the-beauty-salon-refined-island-creations-web-design-development.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Tablets displaying the website design for The Beauty Salon.
    about: The Beauty Salon was a passion project where we ventured beyond conventional beauty salon aesthetics. Eschewing the usual color schemes, we chose a bold palette of black, white, and grey tones to craft a visually striking and sophisticated design. This choice reflects a commitment to modern elegance and innovation, offering a fresh take on beauty branding. The minimalist color scheme not only elevates the visual appeal but also allows the salon’s high-end services to shine. This project showcases our ability to push creative boundaries and deliver a unique, refined online presence.
    url: https://beauty.refinedislandcreations.com/
  - name: The Iron District
+   id: iron
    is_testimonial: false
    option: 
    image: images/iron-district-refined-island-creations-web-design-development.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Laptop and mobile phone showcasing the website design for The Iron District.
    about: The Iron District exemplifies our creativity in presenting rental properties with an edgy and contemporary twist. In this passion project, we moved away from conventional real estate styles to showcase apartments in a fresh and compelling manner. By leveraging a bold design and urban-inspired visuals, we created an engaging and memorable online presence. This project reflects our ability to bring a unique perspective to property showcases, demonstrating how even rental listings can be transformed into standout experiences.
    url: https://irondistrict.refinedislandcreations.com/
  - name: The Bali Villa
+   id: balivilla
    is_testimonial: false
    option: 
    image: images/the-bali-villa-refined-island-creations-web-design-development.png
    image-position: 50% 50%
-   image-alt: 
+   image-alt: Laptop, tablet, and mobile phone displaying the website design for The Bali Villa.
    about: The Bali Villa is a love project that demonstrates our passion for crafting websites that let a single villa shine through minimalistic design. We moved away from complex layouts to create a clean, elegant site where the villa's beauty and charm take center stage. By focusing on simplicity and high-quality imagery, we highlighted the villa’s unique features and luxurious ambiance. This project illustrates how a thoughtfully designed website can enhance the presentation of a singular property, making it an inviting and compelling experience for visitors.
    url: https://balivilla.refinedislandcreations.com/
 ---
@@ -91,9 +98,9 @@ project:
 <section class="max-w-screen-2xl mx-auto">
   <div class="px-5p sm:px-10p py-10p">
     {% for site in page.project %}
-      <div class="md:grid md:grid-cols-5 md:gap-5 mb-15p">
+      <div id="{{ site.id }}" class="md:grid md:grid-cols-5 md:gap-5 mb-15p">
         <div class="col-span-2">
-          <a href="{{ site.url }}">
+          <a href="{{ site.url }}" aria-label="View {{ site.name }}'s website">
             <div class="relative h-full min-h-30 sm:min-h-50">
               <img class="absolute inset-0 w-full h-full object-cover"
                 src="{{ site.image }}" 
@@ -101,7 +108,7 @@ project:
                 alt="{{ site.image-alt }}" />
             </div>
           </a>
-          <a href="{{ site.url }}" class="text-right flex items-center justify-end pt-2p" target="_blank" rel="noopener noreferrer">
+          <a href="{{ site.url }}" class="text-right flex items-center justify-end pt-2p" target="_blank" rel="noopener noreferrer" aria-label="Visit {{ site.name }}'s website">
             <span>Visit the website</span> 
             <i class="fa-solid fa-chevron-right ml-2"></i>
           </a>          

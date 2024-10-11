@@ -22,26 +22,31 @@ seo:
   hide-from-google: true
 header:
  - image: /images/header-image-website-design-development-refined-island-creations-bali.png
-   position: 
-   label: 
+   position: 50% 50%
+   label: Header banner featuring close-up of individual plant leaves against a soft background.
    title: Crafted with Precision, <br> Designed with Passion
    text: Website Design & Development for Luxury Hotels & Hospitality Brands
 slider:
  - title: Pondok Santi Estate
    image: /images/pondok-santi-estate-refined-island-creations-web-design-development.png
-   url:
+   url: /portfolio.html#pondok
+   alt: Laptop, phone, and tablet showcasing the Pondok Santi Estate website design.
  - title: Dejama Glamping Resort
    image: /images/dejama-resort-refined-island-creations-web-design-development.png
-   url:
+   url: /portfolio.html#dejama
+   alt: Laptop, phone, and tablet featuring the Dejama Glamping Resort Lombok website design.
  - title: AJ Hackett International
    image: /images/aj-hackett-international-website-design-developoment-refined-island-creations-bali.png
-   url:
+   url: /portfolio.html#aj
+   alt: Laptop and tablet showcasing the AJ Hackett International website design.
  - title: Hikari Hideaway
    image: /images/hikari-hideaway-refined-island-creations-web-design-development.png
-   url:
+   url: /portfolio.html#hikari
+   alt: Laptop and phone displaying the Hikari Hideaway website design.
  - title: The Beauty Salon
    image: /images/the-beauty-salon-refined-island-creations-web-design-development.png
-   url:
+   url: /portfolio.html#beauty
+   alt: Tablets displaying the website design for The Beauty Salon.
 ---
 
 <!---------Intro------------->
@@ -121,7 +126,7 @@ slider:
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <!-- First Section -->
-      <a href="/the-express-edition.html" class="block">
+      <a href="/the-express-edition.html" class="block" aria-label="Visit The Express Edition page">
         <div class="relative h-full p-5p bg-offers rounded-lg flex flex-col">
           <!-- Content Box -->
           <div class="flex-grow flex flex-col justify-between">
@@ -139,7 +144,7 @@ slider:
       </a>
     
       <!-- Second Section -->
-      <a href="/the-curated-blend.html" class="block">
+      <a href="/the-curated-blend.html" class="block" aria-label="Visit The Curated Blend page">
         <div class="relative h-full p-5p bg-offers rounded-lg flex flex-col">
           <!-- Content Box -->
           <div class="flex-grow flex flex-col justify-between">
@@ -158,7 +163,7 @@ slider:
       </a>
     
       <!-- Third Section -->
-      <a href="/the-tailored-masterpiece.html" class="block">
+      <a href="/the-tailored-masterpiece.html" class="block" aria-label="Visit The Tailored Masterpiece page">
         <div class="relative h-full p-5p bg-offers rounded-lg flex flex-col">
           <!-- Content Box -->
           <div class="flex-grow flex flex-col justify-between">
@@ -204,8 +209,8 @@ slider:
     <div class="overflow-x-auto whitespace-nowrap sm:py-5p">
         <div class="flex items-start">
             {% for item in page.slider %}
-                <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group">
-                    <img class="w-full h-80 object-cover" src="{{ item.image }}" alt="{{ item.title }}" />
+                <a href="{{ item.url }}" class="block flex-shrink-0 w-80 mx-4 relative group" aria-label="Visit {{ item.title }}">
+                    <img class="w-full h-80 object-cover" src="{{ item.image }}" alt="{{ item.alt }}" />
                     <div class="absolute inset-x-0 bottom-0 bg-[#adbab070] text-dark bg-opacity-75 p-3 flex items-center justify-between">
                         <span class="text-lg font-semibold">{{ item.title }}</span>
                     </div>

@@ -3,9 +3,9 @@
         {% for item in page.header %}
         <div class="bg-cover bg-center bg-no-repeat relative" style="background-image: linear-gradient(to right, rgba(21, 19, 18, 0.99), rgba(66, 53, 47, 0)), url('{{ item.image }}'); background-position: {{ item.position }}; height: 100vh !important;">
             <div class="px-5p py-10p md:py-5p flex justify-between items-center ">
-                <a href="/index.html" class="w-72">
+                <a href="/index.html" class="w-72" aria-label="Go to the home page of Refined Island Creations">
                     {% include refined-island-creations-logo-straight.html %}
-                </a>
+                </a>                
                 <nav class="flex justify-end items-center flex-wrap font-syne font-normal">
                     <div class="hamburger-wrapper">
                         <div class="hamburger-menu">
@@ -18,31 +18,40 @@
                         <div class="md:grid md:grid-cols-6 md:gap-5 p-5p pt-15p sm:pt-10p md:pt-5p">
                             <!-- Column 1: Logo and Call to Action -->
                             <div class="md:col-span-full lg:col-span-2 flex flex-col items-center justify-center py-10p">
-                                <a href="/index.html" class="inline-block w-40">
+                                <a href="/index.html" class="inline-block w-40" aria-label="Go to the home page of Refined Island Creations">
                                     {% include refined-island-creations-logo-leaf.html %}
                                 </a>
                                 <div class="mt-10p hidden md:block">
-                                    <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="header-cta"> Book A Call Today </a>
-                                </div>
+                                    <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="header-cta" aria-label="Schedule a consultation call with Refined Island Creations"> 
+                                        Book A Call Today 
+                                    </a>
+                                </div>                                
                             </div>
                             <!-- Column 2: Our Packages (adjusted with margin-top for md screens) -->
                             <div class="md:col-span-3 lg:col-span-2 text-center md:text-left py-5p sm:py-0 md:mx-10p lg:content-center" style="margin-top: 5%;"> 
                                 <h4 class="font-semibold text-lightgreen"> Signature Services </h4>
                                 <nav>
-                                    <a href="/the-express-edition.html" class="block" style="display: block; margin-bottom: 8px;"> Express Edition </a>
-                                    <a href="/the-curated-blend.html" class="block" style="display: block; margin-bottom: 8px;"> Curated Blend </a>
-                                    <a href="/the-tailored-masterpiece.html" class="block" style="display: block;"> Tailored Masterpiece </a>
-                                </nav>
+                                    <a href="/the-express-edition.html" class="block" style="display: block; margin-bottom: 8px;" aria-label="View the Express Edition package"> 
+                                        Express Edition 
+                                    </a>
+                                    <a href="/the-curated-blend.html" class="block" style="display: block; margin-bottom: 8px;" aria-label="View the Curated Blend package"> 
+                                        Curated Blend 
+                                    </a>
+                                    <a href="/the-tailored-masterpiece.html" class="block" style="display: block;" aria-label="View the Tailored Masterpiece package"> 
+                                        Tailored Masterpiece 
+                                    </a>
+                                </nav>                                
                             </div>
                             <!-- Column 3: Portfolio, Contact, and Social Links (adjusted with margin-top for md screens) -->
                             <div class="md:col-span-3 lg:col-span-2 text-center md:text-left pb-10p md:py-0 lg:content-center" style="margin-top: 5%;">
                                 <h4 class="font-semibold text-lightgreen"> Find Out More </h4>
                                 <nav>
-                                    <a href="/portfolio.html" class="block" style="display: block; margin-bottom: 8px;"> Portfolio & Testimonials </a>
-                                    <a href="/contact.html" class="block" style="display: block; margin-bottom: 8px;"> Contact Us </a>
-                                    
-                            
-                                    
+                                    <a href="/portfolio.html" class="block" style="display: block; margin-bottom: 8px;" aria-label="View Portfolio and Testimonials"> 
+                                        Portfolio & Testimonials 
+                                    </a>
+                                    <a href="/contact.html" class="block" style="display: block; margin-bottom: 8px;" aria-label="Contact Us for inquiries"> 
+                                        Contact Us 
+                                    </a>                                    
                                     <div class="social-links flex justify-center md:justify-start mt-4">
                                         <a href="https://wa.me/6282339577507" target="_blank" class="icon-link mr-2p md:mr-5p" aria-label="Send us a WhatsApp message">
                                             <i class="fa-brands fa-whatsapp"></i>
@@ -53,7 +62,10 @@
                                     </div>
 
                                     <div class="mt-20p sm:mt-10p flex justify-center md:hidden">
-                                        <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="header-cta"> Book A Call Today </a>
+                                        <a href="https://calendly.com/refinedislandcreations/consultation-call" target="_blank" class="header-cta" aria-label="Schedule a consultation call with Refined Island Creations"> 
+                                            Book A Call Today 
+                                        </a>
+                                        
                                     </div>
                                 </nav>
                             </div>

@@ -476,7 +476,6 @@ footer nav a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5%;
     font-size: 1.5rem; /* Adjust icon size */
     color: #000; /* Adjust icon color */
 }
