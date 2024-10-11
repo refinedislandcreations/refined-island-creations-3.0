@@ -505,6 +505,9 @@ video {
 .ml-5p {
   margin-left: 5%;
 }
+.mr-2p {
+  margin-right: 2%;
+}
 .mt-10p {
   margin-top: 10%;
 }
@@ -513,6 +516,9 @@ video {
 }
 .mt-2\/3 {
   margin-top: 75%;
+}
+.mt-20p {
+  margin-top: 20%;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -760,9 +766,6 @@ video {
 }
 .pr-4p {
   padding-right: 4%;
-}
-.pr-5 {
-  padding-right: 1.25rem;
 }
 .pr-5p {
   padding-right: 5%;
@@ -1080,8 +1083,10 @@ nav {
     padding: 5%;
     position: fixed;
     top: 0;
-    left: 0; /* Full width from the left */
+    left: 50%; /* Start positioning from the left center */
+    transform: translateX(-50%); /* Move the element back by half its width to center */
     width: 100%; /* Full width menu */
+    max-width: 1536px; /* Limit maximum width */
     text-align: left;
     overflow-y: auto;
     z-index: 50;
@@ -1097,7 +1102,7 @@ nav {
     color: inherit; 
     display: block;
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* Ensure the mobile menu links are stacked vertically */
@@ -1174,19 +1179,22 @@ footer nav a {
 }
 
 .header-cta {
+    display: inline-block; /* Ensure the button fits its content */
     padding: 0.5rem 1.1rem;
     background-color: #839788;
     color: #001410;
     text-transform: uppercase;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    white-space: nowrap; /* Prevents text wrapping */
+    max-width: -moz-max-content;
+    max-width: max-content; /* Ensures the button width never exceeds content */
 }
+
+
 
 .cta {
     padding: 0.5rem 2rem;
@@ -1244,19 +1252,20 @@ footer nav a {
     background-color: rgba(0,0,0,0.7);
   }
 
-
 /* Accordion */
 .accordion .dt {
     display: flex; /* Use flexbox to align items */
     justify-content: space-between; /* Space between text and icon */
     align-items: center; /* Center items vertically */
     padding-bottom: 0.5rem; /* Add padding for aesthetics */
+    position: relative; /* To help position the icon correctly */
 }
 
 /* Link Styles */
 .accordion .dt a {
     color: #EEE0CB; /* Link color */
     text-decoration: none; /* Remove underline */
+    flex: 1; /* Allow the link to take up available space */
     position: relative; /* Required for the icon positioning */
 }
 
@@ -1264,17 +1273,18 @@ footer nav a {
 .accordion .dt a::after {
     content: "+"; /* Icon content */
     position: absolute; /* Position absolutely */
-    right: 0; /* Align to the right of the link */
+    right: 0; /* Align to the right */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for perfect centering */
-    transition: all 0.35s; /* Animation for icon rotation */
+    transition: transform 0.35s; /* Animation for icon rotation */
     font-size: 1.5rem; /* Icon size */
 }
 
-/* Add this rule for rotation */
+/* Rotate when open */
 .accordion .dt a.open::after {
     transform: translateY(-50%) rotateZ(45deg); /* Rotate when open */
 }
+
 
 
 .about-image {
@@ -1337,7 +1347,7 @@ footer nav a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0.5rem;
+    margin-right: 5%;
     font-size: 1.5rem; /* Adjust icon size */
     color: #000; /* Adjust icon color */
 }
@@ -1575,6 +1585,9 @@ footer nav a {
   .sm\:mt-0 {
     margin-top: 0px;
   }
+  .sm\:mt-10p {
+    margin-top: 10%;
+  }
   .sm\:mt-40p {
     margin-top: 40%;
   }
@@ -1687,6 +1700,9 @@ footer nav a {
   .md\:mb-5p {
     margin-bottom: 5%;
   }
+  .md\:mr-5p {
+    margin-right: 5%;
+  }
   .md\:block {
     display: block;
   }
@@ -1769,6 +1785,9 @@ footer nav a {
   }
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .lg\:content-center {
+    align-content: center;
   }
   .lg\:gap-4 {
     gap: 1rem;

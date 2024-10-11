@@ -219,8 +219,10 @@ nav {
     padding: 5%;
     position: fixed;
     top: 0;
-    left: 0; /* Full width from the left */
+    left: 50%; /* Start positioning from the left center */
+    transform: translateX(-50%); /* Move the element back by half its width to center */
     width: 100%; /* Full width menu */
+    max-width: 1536px; /* Limit maximum width */
     text-align: left;
     overflow-y: auto;
     z-index: 50;
@@ -236,7 +238,7 @@ nav {
     color: inherit; 
     display: block;
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* Ensure the mobile menu links are stacked vertically */
@@ -311,17 +313,21 @@ footer nav a {
 }
 
 .header-cta {
+    display: inline-block; /* Ensure the button fits its content */
     padding: 0.5rem 1.1rem;
     background-color: #839788;
     color: #001410;
     text-transform: uppercase;
-    appearance: none;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    white-space: nowrap; /* Prevents text wrapping */
+    max-width: max-content; /* Ensures the button width never exceeds content */
 }
+
+
 
 .cta {
     padding: 0.5rem 2rem;
@@ -470,7 +476,7 @@ footer nav a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0.5rem;
+    margin-right: 5%;
     font-size: 1.5rem; /* Adjust icon size */
     color: #000; /* Adjust icon color */
 }
