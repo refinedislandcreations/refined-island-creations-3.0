@@ -550,6 +550,9 @@ video {
 .min-h-40 {
   min-height: 40vh;
 }
+.w-32 {
+  width: 8rem;
+}
 .w-40 {
   width: 10rem;
 }
@@ -615,6 +618,11 @@ video {
 }
 .gap-4 {
   gap: 1rem;
+}
+.space-y-5p > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5% * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5% * var(--tw-space-y-reverse));
 }
 .self-start {
   align-self: flex-start;
@@ -682,6 +690,10 @@ video {
 }
 .p-5p {
   padding: 5%;
+}
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .px-5p {
   padding-left: 5%;
@@ -1626,6 +1638,9 @@ footer nav a {
   .sm\:min-h-50 {
     min-height: 50vh;
   }
+  .sm\:w-36 {
+    width: 9rem;
+  }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1667,6 +1682,9 @@ footer nav a {
   .sm\:pb-1p {
     padding-bottom: 1%;
   }
+  .sm\:pb-5p {
+    padding-bottom: 5%;
+  }
   .sm\:pr-20p {
     padding-right: 20%;
   }
@@ -1675,6 +1693,9 @@ footer nav a {
   }
   .sm\:pt-10p {
     padding-top: 10%;
+  }
+  .sm\:pt-5p {
+    padding-top: 5%;
   }
   .sm\:text-2xl {
     font-size: 1.5rem;
