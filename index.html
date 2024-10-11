@@ -60,10 +60,10 @@ slider:
 
 
 
-<!--------For who--------->
-<section class="max-w-screen-2xl mx-auto">
-  <div class="px-5p sm:px-10p mb-5p">
-      <div id="typed-strings">
+<!--------For who small--------->
+<section class="max-w-screen-2xl mx-auto sm:hidden">
+  <div class="px-5p sm:px-10p mb-5p pt-10p">
+      <div id="typed-strings-1">
           <span>Boutique Airbnbs</span>
           <span>Luxury Bali Villas</span>
           <span>Eco-Friendly Lodges</span>
@@ -78,7 +78,30 @@ slider:
           <span>Luxury Yacht Charters</span>  
       </div>
     <div class="static-text">
-      <h2>We create websites for <span id="typed-location"></span></h2>
+      <h2>We create websites for <br> <span id="typed-location-1" class="animated-text-wrapper"></span></h2>
+    </div>
+  </div>  
+</section>
+
+<!--------For who--------->
+<section class="max-w-screen-2xl mx-auto hidden sm:block">
+  <div class="px-5p sm:px-10p mb-5p pt-10p">
+      <div id="typed-strings-2">
+          <span>Boutique Airbnbs</span>
+          <span>Luxury Bali Villas</span>
+          <span>Eco-Friendly Lodges</span>
+          <span>Boutique Hotels</span>
+          <span>Chic Cafes</span>
+          <span>Luxury Resorts</span>
+          <span>Private Luxury Estates</span>
+          <span>Luxury Bed & Breakfasts</span>
+          <span>Glamping Sites & Camps</span>
+          <span>Wellness & Spa Retreats</span>
+          <span>Exclusive Event Venues</span>
+          <span>Luxury Yacht Charters</span>  
+      </div>
+    <div class="static-text">
+      <h2>We create websites for <span id="typed-location-2" class="animated-text-wrapper"></span></h2>
     </div>
   </div>  
 </section>
@@ -236,8 +259,8 @@ slider:
 
       <!-- Image in its own column on md+ screens -->
       <div class="hidden md:block col-span-2">
-        <div class="mt-5p">
-          <img class="w-full h-auto max-h-50vh object-cover object-center" src="/images/julia-rees-refined-island-creations.jpg" alt="Julia Rees">
+        <div>
+          <img class="w-full h-auto object-cover object-center mt-5p" src="/images/julia-rees-refined-island-creations.jpg" alt="Julia Rees">
         </div>
       </div>
 
@@ -249,7 +272,7 @@ slider:
       </div>
 
       <!-- Image below text on small screens -->
-      <div class="flex justify-start mt-5p min-h-40 md:hidden">
+      <div class="flex justify-start mt-5p about-image md:hidden">
         <img class="w-full h-auto object-cover object-center" src="/images/julia-rees-refined-island-creations.jpg" alt="Julia Rees">
       </div>
     </div>

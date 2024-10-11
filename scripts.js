@@ -92,14 +92,27 @@ lightGallery(document.getElementById('lg-3'), {
 
 //type
 
-if (document.querySelector('#typed-location')) {
+if (document.querySelector('#typed-location-1')) {
 
 
-var typed = new Typed('#typed-location', {
-  stringsElement: '#typed-strings',
+var typed = new Typed('#typed-location-1', {
+  stringsElement: '#typed-strings-1',
   typeSpeed: 100,
   backSpeed: 50,
   smartBackspace: true,
 });
 
 }
+
+
+if (document.querySelector('#typed-location-2')) {
+
+
+  var typed = new Typed('#typed-location-2', {
+    stringsElement: '#typed-strings-2',
+    typeSpeed: 100,
+    backSpeed: 50,
+    smartBackspace: true,
+  });
+  
+  }
