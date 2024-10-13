@@ -504,6 +504,10 @@ footer nav a {
     width: 10rem;
 }
 
+.portfolio-image-size {
+    min-height: 30vh;
+}
+
 
 
 
@@ -518,6 +522,10 @@ footer nav a {
     .nav-height {
         height: 2.3rem;
     }   
+
+    .portfolio-image-size {
+        min-height: 34vh;
+    }
 }
 
 @media (min-width:390px) {
@@ -541,6 +549,10 @@ footer nav a {
     
     .nav-gap {
         gap: 0.8rem;
+    }
+
+    .portfolio-image-size {
+        min-height: 38vh;
     }
 }
 
@@ -569,6 +581,10 @@ footer nav a {
     .about-image {
         max-height: 27rem;
     }
+
+    .portfolio-image-size {
+        min-height: 43vh;
+    }
 }
 
 
@@ -583,6 +599,10 @@ footer nav a {
 
     .animated-text-wrapper {
         font-size: 2.1rem;
+    }
+
+    .portfolio-image-size {
+        min-height: 50vh;
     }
 }
 
@@ -634,6 +654,11 @@ footer nav a {
     .animated-text-wrapper {
         font-size: 1.6rem;
     }
+
+    
+    .portfolio-image-size {
+        min-height: 60vh;
+    }
 }
 
 
@@ -672,6 +697,16 @@ footer nav a {
     
     .header-subtitle-size {
         font-size: 1.625rem;
+    }
+
+    .portfolio-image-size {
+        min-height: 50vh;
+    }
+}
+
+@media (min-width:1318px) {
+    .portfolio-image-size {
+        min-height: 60vh;
     }
 }
 

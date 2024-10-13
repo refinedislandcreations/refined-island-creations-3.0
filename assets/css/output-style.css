@@ -508,14 +508,20 @@ video {
 .mr-2p {
   margin-right: 2%;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .mt-10p {
   margin-top: 10%;
 }
 .mt-15p {
   margin-top: 15%;
 }
-.mt-2\/3 {
-  margin-top: 75%;
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-20 {
+  margin-top: 5rem;
 }
 .mt-20p {
   margin-top: 20%;
@@ -523,8 +529,20 @@ video {
 .mt-2p {
   margin-top: 2%;
 }
+.mt-35p {
+  margin-top: 35%;
+}
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-40 {
+  margin-top: 10rem;
+}
+.mt-40p {
+  margin-top: 40%;
+}
+.mt-55p {
+  margin-top: 55%;
 }
 .mt-5p {
   margin-top: 5%;
@@ -558,9 +576,6 @@ video {
 }
 .h-full {
   height: 100%;
-}
-.min-h-30 {
-  min-height: 30vh;
 }
 .w-32 {
   width: 8rem;
@@ -763,9 +778,6 @@ video {
 }
 .pl-\[2\%\] {
   padding-left: 2%;
-}
-.pr-10p {
-  padding-right: 10%;
 }
 .pr-20p {
   padding-right: 20%;
@@ -1382,6 +1394,10 @@ footer nav a {
     width: 10rem;
 }
 
+.portfolio-image-size {
+    min-height: 30vh;
+}
+
 
 
 
@@ -1396,6 +1412,10 @@ footer nav a {
     .nav-height {
         height: 2.3rem;
     }   
+
+    .portfolio-image-size {
+        min-height: 34vh;
+    }
 }
 
 @media (min-width:390px) {
@@ -1419,6 +1439,10 @@ footer nav a {
     
     .nav-gap {
         gap: 0.8rem;
+    }
+
+    .portfolio-image-size {
+        min-height: 38vh;
     }
 }
 
@@ -1447,6 +1471,10 @@ footer nav a {
     .about-image {
         max-height: 27rem;
     }
+
+    .portfolio-image-size {
+        min-height: 43vh;
+    }
 }
 
 
@@ -1461,6 +1489,10 @@ footer nav a {
 
     .animated-text-wrapper {
         font-size: 2.1rem;
+    }
+
+    .portfolio-image-size {
+        min-height: 50vh;
     }
 }
 
@@ -1512,6 +1544,11 @@ footer nav a {
     .animated-text-wrapper {
         font-size: 1.6rem;
     }
+
+    
+    .portfolio-image-size {
+        min-height: 60vh;
+    }
 }
 
 
@@ -1550,6 +1587,16 @@ footer nav a {
     
     .header-subtitle-size {
         font-size: 1.625rem;
+    }
+
+    .portfolio-image-size {
+        min-height: 50vh;
+    }
+}
+
+@media (min-width:1318px) {
+    .portfolio-image-size {
+        min-height: 60vh;
     }
 }
 
@@ -1605,6 +1652,9 @@ footer nav a {
   .sm\:mt-0 {
     margin-top: 0px;
   }
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
   .sm\:mt-10p {
     margin-top: 10%;
   }
@@ -1622,9 +1672,6 @@ footer nav a {
   }
   .sm\:hidden {
     display: none;
-  }
-  .sm\:min-h-50 {
-    min-height: 50vh;
   }
   .sm\:w-36 {
     width: 9rem;
@@ -1713,11 +1760,23 @@ footer nav a {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .md\:mb-5p {
-    margin-bottom: 5%;
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+  .md\:mb-10p {
+    margin-bottom: 10%;
   }
   .md\:mr-5p {
     margin-right: 5%;
+  }
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+  .md\:mt-2p {
+    margin-top: 2%;
+  }
+  .md\:mt-40p {
+    margin-top: 40%;
   }
   .md\:block {
     display: block;
@@ -1727,9 +1786,6 @@ footer nav a {
   }
   .md\:hidden {
     display: none;
-  }
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1762,9 +1818,6 @@ footer nav a {
   .md\:pb-5p {
     padding-bottom: 5%;
   }
-  .md\:pl-5p {
-    padding-left: 5%;
-  }
   .md\:pt-10p {
     padding-top: 10%;
   }
@@ -1780,15 +1833,21 @@ footer nav a {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .lg\:mx-10p {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .lg\:mt-25p {
-    margin-top: 25%;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
   .lg\:mt-2p {
     margin-top: 2%;
+  }
+  .lg\:mt-35p {
+    margin-top: 35%;
   }
   .lg\:block {
     display: block;
@@ -1798,6 +1857,9 @@ footer nav a {
   }
   .lg\:hidden {
     display: none;
+  }
+  .lg\:h-16 {
+    height: 4rem;
   }
   .lg\:h-80 {
     height: 20rem;
@@ -1830,14 +1892,26 @@ footer nav a {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
   .lg\:pb-2p {
     padding-bottom: 2%;
+  }
+  .lg\:pb-5p {
+    padding-bottom: 5%;
+  }
+  .lg\:pl-5p {
+    padding-left: 5%;
   }
   .lg\:pr-25p {
     padding-right: 25%;
   }
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+  .lg\:pt-5p {
+    padding-top: 5%;
   }
   .lg\:text-left {
     text-align: left;
@@ -1850,6 +1924,15 @@ footer nav a {
   }
   .xl\:mb-5p {
     margin-bottom: 5%;
+  }
+  .xl\:mt-20p {
+    margin-top: 20%;
+  }
+  .xl\:mt-2p {
+    margin-top: 2%;
+  }
+  .xl\:mt-40 {
+    margin-top: 10rem;
   }
   .xl\:mt-5p {
     margin-top: 5%;
@@ -1864,8 +1947,18 @@ footer nav a {
     padding-top: 2%;
     padding-bottom: 2%;
   }
+  .xl\:py-5p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
   .xl\:pb-0 {
     padding-bottom: 0px;
+  }
+  .xl\:pb-2p {
+    padding-bottom: 2%;
+  }
+  .xl\:pt-2p {
+    padding-top: 2%;
   }
   .xl\:pt-5p {
     padding-top: 5%;
