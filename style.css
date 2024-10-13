@@ -68,8 +68,8 @@ svg {
 .mixmatch-title {
     font-family: 'Lora', 'serif';
     text-transform: uppercase;
-    font-size: 1.4rem; 
-    line-height: 2rem; /* 32px */
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
 .text-border {
@@ -607,6 +607,11 @@ footer nav a {
     .responsive-video {
         height: 60vh; /* Desired height for the video */
     }
+
+    .mixmatch-title {
+        font-size: 1.7rem;
+        line-height: 2rem;
+      }
 }
 
 

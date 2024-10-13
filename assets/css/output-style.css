@@ -938,8 +938,8 @@ svg {
 .mixmatch-title {
     font-family: 'Lora', 'serif';
     text-transform: uppercase;
-    font-size: 1.4rem; 
-    line-height: 2rem; /* 32px */
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
 .text-border {
@@ -1485,6 +1485,11 @@ footer nav a {
     .responsive-video {
         height: 60vh; /* Desired height for the video */
     }
+
+    .mixmatch-title {
+        font-size: 1.7rem;
+        line-height: 2rem;
+      }
 }
 
 
@@ -1828,6 +1833,9 @@ footer nav a {
   .lg\:pb-2p {
     padding-bottom: 2%;
   }
+  .lg\:pr-25p {
+    padding-right: 25%;
+  }
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -1846,6 +1854,12 @@ footer nav a {
   .xl\:mt-5p {
     margin-top: 5%;
   }
+  .xl\:h-80 {
+    height: 20rem;
+  }
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .xl\:py-2p {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -1861,6 +1875,13 @@ footer nav a {
 @media (min-width: 1536px) {
   .\32xl\:mt-15p {
     margin-top: 15%;
+  }
+  .\32xl\:h-96 {
+    height: 24rem;
+  }
+  .\32xl\:py-2p {
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 
