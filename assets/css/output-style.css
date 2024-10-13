@@ -520,14 +520,14 @@ video {
 .mt-20p {
   margin-top: 20%;
 }
+.mt-2p {
+  margin-top: 2%;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .mt-5p {
   margin-top: 5%;
-}
-.mt-2p {
-  margin-top: 2%;
 }
 .block {
   display: block;
@@ -1746,13 +1746,13 @@ footer nav a {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .md\:py-5p {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
   .md\:py-2p {
     padding-top: 2%;
     padding-bottom: 2%;
+  }
+  .md\:py-5p {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   .md\:pb-5p {
     padding-bottom: 5%;
