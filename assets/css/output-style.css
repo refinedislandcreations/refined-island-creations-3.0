@@ -508,20 +508,11 @@ video {
 .mr-2p {
   margin-right: 2%;
 }
-.mt-10 {
-  margin-top: 2.5rem;
-}
 .mt-10p {
   margin-top: 10%;
 }
 .mt-15p {
   margin-top: 15%;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-20 {
-  margin-top: 5rem;
 }
 .mt-20p {
   margin-top: 20%;
@@ -529,14 +520,11 @@ video {
 .mt-2p {
   margin-top: 2%;
 }
-.mt-35p {
-  margin-top: 35%;
+.mt-30p {
+  margin-top: 30%;
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.mt-40 {
-  margin-top: 10rem;
 }
 .mt-40p {
   margin-top: 40%;
@@ -779,11 +767,20 @@ video {
 .pl-\[2\%\] {
   padding-left: 2%;
 }
+.pr-10p {
+  padding-right: 10%;
+}
 .pr-20p {
   padding-right: 20%;
 }
+.pr-25p {
+  padding-right: 25%;
+}
 .pr-2p {
   padding-right: 2%;
+}
+.pr-30p {
+  padding-right: 30%;
 }
 .pr-4p {
   padding-right: 4%;
@@ -1583,6 +1580,7 @@ footer nav a {
 @media (min-width:1024px) {
     .header-title-size {
         font-size: 3.675rem;
+        line-height: 3.85rem;
     }
     
     .header-subtitle-size {
@@ -1652,9 +1650,6 @@ footer nav a {
   .sm\:mt-0 {
     margin-top: 0px;
   }
-  .sm\:mt-10 {
-    margin-top: 2.5rem;
-  }
   .sm\:mt-10p {
     margin-top: 10%;
   }
@@ -1720,6 +1715,12 @@ footer nav a {
   .sm\:pb-5p {
     padding-bottom: 5%;
   }
+  .sm\:pr-20p {
+    padding-right: 20%;
+  }
+  .sm\:pr-25p {
+    padding-right: 25%;
+  }
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -1769,9 +1770,6 @@ footer nav a {
   .md\:mr-5p {
     margin-right: 5%;
   }
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
   .md\:mt-2p {
     margin-top: 2%;
   }
@@ -1818,6 +1816,9 @@ footer nav a {
   .md\:pb-5p {
     padding-bottom: 5%;
   }
+  .md\:pr-30p {
+    padding-right: 30%;
+  }
   .md\:pt-10p {
     padding-top: 10%;
   }
@@ -1846,8 +1847,8 @@ footer nav a {
   .lg\:mt-2p {
     margin-top: 2%;
   }
-  .lg\:mt-35p {
-    margin-top: 35%;
+  .lg\:mt-30p {
+    margin-top: 30%;
   }
   .lg\:block {
     display: block;
@@ -1904,6 +1905,9 @@ footer nav a {
   .lg\:pl-5p {
     padding-left: 5%;
   }
+  .lg\:pr-20p {
+    padding-right: 20%;
+  }
   .lg\:pr-25p {
     padding-right: 25%;
   }
@@ -1930,9 +1934,6 @@ footer nav a {
   }
   .xl\:mt-2p {
     margin-top: 2%;
-  }
-  .xl\:mt-40 {
-    margin-top: 10rem;
   }
   .xl\:mt-5p {
     margin-top: 5%;

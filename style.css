@@ -693,6 +693,7 @@ footer nav a {
 @media (min-width:1024px) {
     .header-title-size {
         font-size: 3.675rem;
+        line-height: 3.85rem;
     }
     
     .header-subtitle-size {
